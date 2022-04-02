@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBASSADORS</title>
+    <script src="https://kit.fontawesome.com/2a05cd7cd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/47316d587b.js" crossorigin="anonymous"></script>
+   
+   <style>
+        #ambassadors{
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid teal; */
+            margin-top:30px;
+        }
+        #inner-ambassadors{
+            display: flex;
+            justify-content:space-between;
+            flex-direction: row;
+            width: 85%;
+            /* border: 2px solid pink; */
+            margin: auto;
+            margin-top: 50px;
+        }
+        #ambassadors-image{
+            width: 46%;
+            /* border: 2px solid red; */
+        }
+        #ambassadors-image > img{
+            /* object-fit:fill; */
+            height: 100%;
+            width: 100%;
+        }
+        #ambassadors-detail{
+            width: 46%;
+            /* border: 2px solid red; */
+        }
+        #top-heading{
+            text-align: center;
+        }
+        .text-uppercase{
+            font-size: 30px;
+            margin: 0px;
+        }
+        #ambassadors-detail{
+            color: gray;
+        }
+        #ambassadors-detail> p{
+            font-size: 20px;
+        }
+        p > a{
+            text-decoration: none;
+            color: gray;
+        }
+        p > a:hover{
+            text-decoration:underline;
+            color: black;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            /* border: 2px solid rebeccapurple; */
+        }
+        #accolades{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            /* border: 2px solid pink; */
+            width: 85%;
+            margin-top: 40px;
+        }
+        #accolades-heading{
+            font-size: 25px;
+        }
+        #social-media-icons+hr{
+            border: .5px solid black;
+            margin-bottom: 100px;
+        }
+        .col-md-6 , .col-12{
+            font-size: 20px;
+            color: gray;
+        }
+        .col-12 {
+            margin: auto;
+            /* border: 1px solid purple; */
+            width: 85%;
+        }
+        strong{
+            color: black;
+        }
+        h3{
+            text-align: end;
+        }
+        .iconify{
+            height: 40px;
+            width: 40px;
+        }
+        .iconify:hover{
+            color: red;
+        }
+        #social-media-icons{
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: end;
+            gap:12px
+        }
+        #social-media{
+            width: 85%;
+            /* border: 1px solid pink; */
+            margin: auto;
+        }
+        /* top-banner */
+        img{
+            width: 100%;
+            height: 88%;
+        }
+        #top-banner{
+            width: 100%;
+            /* height: 650px; */
+            margin-top:20px;
+        }
+        .curve{
+            height:42px ;
+            width: 8%;
+            margin-left: 50%;
+            transform: translate(-50%, 0%);
+            -webkit-transform: translate(-50%,28%);
+            margin-bottom: 0px;
+            margin-top: -40.1px;
+        }
+        hr{
+            border: .5px solid red;
+            margin: 0px;
+        }
+        #vl{
+            border-left: 2px solid black;
+            height: 120px;
+            margin-left: 50%;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+        li{
+            font-size: 11px;
+            list-style-type: "/ ";
+        }
+        li:nth-child(1){
+            margin-top: 1px;
+            list-style-type: "";
+        }
+        #nav-rigth > #ul-top{
+            width: 10%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        body {
+            /* overflow: hidden;  */
+            margin: 0;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        }
+        body::-webkit-scrollbar {
+            display: none; /* for Chrome, Safari, and Opera */
+        }
+        @media only screen and (min-width: 70px) and (max-width: 780px) {
+            #inner-ambassadors{
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            }
+            #ambassadors-detail,#ambassadors-image{
+                margin: auto;
+                margin-top: 20px;
+            }
+        }
+        #topbox{
+        height: 43px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    /* topleft side content */
+    #topboxleft{
+       height: 43px;
+        width: 360px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+    }
+            /* topleft side innercontent */
+    
+    #topboxleftinner{
+        height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer;
+        font-family:  sans-serif;
+    }
+
+         /* topright side content */
+    
+    #topboxright{
+       height: 43px;
+        width: 270px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        font-family:  sans-serif;
+        
+    }
+    
+     /* topright side inner content */
+    #topboxrightinner{
+       height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex; 
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer; 
+        gap: 5px;   
+    }
+
+    /* social media icons */
+    .navICON{
+        display: flex;
+       color:#e30613 ;
+        font-size: 14px;
+        justify-content: space-around;
+        gap: 10px;
+       margin-top: -7px;
+    }
+    i{
+      border-radius: 50px;
+        font-size: 24px;   
+    }
+   a{
+     text-decoration: none;
+     color: #777171;
+   }
+   /*Main navbar */
+   #topboxleftinner>div{cursor: pointer;}
+
+#topboxleftinner>div:hover{ color:red;}
+   /* ---------------------------START OF NAVBAR CHANGES CSS PART---------------------- */
+   nav ul{
+       padding: 0 -15px;
+       margin: 0;
+       float:initial;
+       margin-left: 70px;
+       margin-top: -40px;
+   }
+   nav ul li{
+       background: white;
+       position: relative;
+       list-style: none;
+       display: inline-flex;
+       margin-right: 2px;
+       margin-left: 5px ;
+        
+   }
+   .navmain{margin-left: 50px;}
+   .navlinemain{
+       background: white;
+   }
+   .navlinemain:hover{
+        cursor: pointer;
+        border-bottom: 1.5px solid #e30613;color: #e30613;   
+   }
+   nav ul li a{
+       display: block;
+       padding: 0 15px;
+       color: #777171;
+       text-decoration: none ;
+       line-height: 40px;
+       font-size: 15px;
+   }
+   nav>ul>li>ul>li>a{
+       color: black;
+       background-color: white;
+       font-size: medium;
+   }
+   nav>ul>li>ul>li>a:hover{
+       border: none;
+       color: lightgrey;
+   }
+   nav ul ul{
+        position: absolute;
+        top: 60px;
+        display: none;
+
+   }
+   nav ul li:hover > ul{
+       display: block;
+       transform: -webkit-transform translate(-50%, 0%);
+   }
+   nav>ul>li>ul>li{
+       width: auto;
+       margin-left: -95px; 
+   }
+   nav ul ul li{
+       width: 100px;
+       float: none;
+       display: list-item;
+       position: relative;
+   }
+   /* navbar center logo image */
+   #logo{
+       height: 150px;
+       width: 130px;
+       margin:-20px 20px -40px 20px 
+   }
+   #topboxleftinner>div{cursor: pointer;}
+
+   #topboxleftinner>div:hover{ color:#212529;}
+
+  .hov:hover{border-bottom: 1.5px solid #e30613;color: #e30613;}
+  
+  .col:hover{color:#212529;}
+
+    * {box-sizing:border-box}
+
+   #topboxleftinner>div{cursor: pointer;}
+
+   #topboxleftinner>div:hover{ color:#212529;}
+
+  .hov:hover{border-bottom: 1.5px solid #e30613;color: #e30613;}
+  
+  .col:hover{color:#212529;}
+   
+   #input-content{    width: 102%;    height: 30px;    padding: 30px 0px 50px 0px ; margin-left: -5px;  background-color: #e6e7e2;   border-top: 3px solid #e30613 ;   }
+   
+   
+   #flex-box{    height: 30px;    width: 100%;    display: flex;    box-sizing: border-box;    justify-content: center;    gap: 5px;    }
+  
+  
+   #input-box{       border: 1px solid black;   height: 23px;;   padding: 8px 10px  0px 10px;   background-color: white;
+                     border: none;   color: #212529;   font-family: sans-serif;   font-size: 14px;    }
+  
+  
+   #input-box+input{    padding-left: 10px;     padding-top: 2px;    width: 280px;     border: none;    }
+  
+  
+   #iconright{    background-color: #e30613;     color: white;    width: 30px;    display: flex;
+                   justify-content: center;    align-items: center;   }
+  
+  
+   #footercontainer{       width: 100%;    height: 320px;       padding-top: 25px;    display: flex;
+                           justify-content: center;    gap: 30px;   }
+
+
+   #footer-left{     width: 820px;     height: 250px;      }
+  
+  
+   #footer-right{     width: 350px;    height: 270px;     box-sizing: border-box;    }
+  
+ 
+    #footer-right>input,#footer-right>select{    display: block;    width: 100%;    padding: 15px 0px 5px 15px;    border: none;
+                                                   border-bottom: 2px solid  #e6e7e2;;     font-size: 17px;   }
+  
+
+   #submit{     display: block;     margin-left: 82%;   margin-top: 20px;   padding: 5px 10px;  border: 1px solid #e30613 ;
+                   color: #e30613;     background-color: white;    cursor: pointer;     }
+
+
+   #footer-right>select{    color:#212529;      font-family:sans-serif;    font-weight: 300;
+                       width:105%;     padding-bottom: 0px;        cursor: pointer;        }
+
+
+ #footer-right>input:hover,#footer-right>select:hover {      outline:none!important;     }
+
+
+   #submit:hover{   color: white;   background-color: #e30613;     }
+
+   
+   #footer-left-top{    width: 100%;     height: 50px;   margin-top: 20px;    display: flex;      background-color: white;   }
+ 
+ 
+   #footer-left-top>div{       width: 25%;     height: 100%;}
+
+   #footer-left-top select{    width: 170PX;       height: 31;     font-size: 10px;    font-weight: 300;
+                           font-family: sans-serif;             padding: 8px 10px;     color: #e30613;     border-color: #e30613;}
+
+   #footer-left-top p{    font-size: 13px;    font-family: sans-serif;    color: #e30613;    cursor: pointer;   }
+
+   .navICON1{     display: flex;    color: red;     font-size: 22px;     gap: 7px;
+       
+    }
+    .navICON1>i{ cursor: pointer;}
+ 
+    #footer-left-bottom{   display: flex;  }  
+ 
+    #footer-left-bottom>div{width: 31%;height: 180px;margin-top: 25px;}
+
+  #footer-left-bottom p{ font-size: 11px;font-family: sans-serif;line-height: 7px;margin-left: 15px; color: #212529;cursor: pointer;}
+  
+  #footer-left-bottom P:hover,#footer-left-top p:hover{ color: #c4c5c1;}
+
+#middle{display: flex;}
+
+ #iconcircle{height: 25px;     margin: 5px 10px;     width: 25px;     border: 1px solid #e30613;  display:flex ;  justify-content: center;
+                             align-items: center;     border-radius: 50%;      }
+
+    </style>
+</head>
+<body>
+    <div id="topbox">
+        <div id="topboxleft">
+            <div id="topboxleftinner">
+                 <div>MY KALYAN /</div>
+                 <div>MEDIA /</div>
+                 <div>KALYAN NEWS /</div>
+                 <div>GOLD RATES /</div>
+                 <div>DIGITAL GOLD</div>
+            </div>
+        </div>
+     
+       <div></div>
+       <div id="topboxright">
+        <div id="topboxrightinner">
+           <div class="col">FEEDBACK /</div>
+           <div class="col">CONTACT /</div>
+           <div class="navICON">
+              <div><i  class= "fa-brands fa-facebook col"></i></div> 
+              <div><i  class="fa-brands fa-twitter-square col"></i></div> 
+              <div> <i  class="fa-brands fa-youtube col"></i></div>
+               <div><i  class="fa-brands fa-instagram-square col"></i></div>
+           </div>
+        </div> 
+    </div>
+   </div>
+
+  <!-- navbar -->
+  <div class="navmain">
+    <nav style="font-family: 'PT Sans', sans-serif;">
+        <ul>
+            <li><a href="ourbrandsAnokhi.html" class="navlinemain">OUR BRANDS</a>
+                    
+                <ul>
+                    <!-- <div style="width: 300%; margin-left: -95px;"><h5 style="text-decoration: underline;">BRANDS FAMILY</h5></div> -->
+                    <li><a href="ourbrandsMudra.html" style="margin-top: 22px;">MUDHRA</a></li>
+                    <li><a href="ourbrandsNimah.html">NIMAH</a></li>
+                    <li><a href="ourbrandsAnokhi.html">ANOKHI</a></li>
+                    <li><a href="ourbrandsRang.html">RANG</a></li>
+                    <li><a href="">TEJASVI</a></li>
+                    <li><a href="">ZIAH</a></li>
+                </ul> 
+            </li>
+            <li><a href="muhurat.html" class="navlinemain">MUHURAT</a>
+                <ul>
+                  <li><a href="muhuratGujrat.html" style="margin-top: 22px;">GUJRAT</a></li>
+                  <li><a href="muhuratMah.html">MAHARASHTRA</a></li>
+                  <li><a href="muhuratPunjab.html">PUNJAB </a></li>
+                  <li><a href="muhuratRajasthan.html">RAJASTHAN</a></li>
+                  <li><a href="">UP </a></li>
+                </ul> 
+            </li>
+            <li><a href="shopOnline.html" target="_blank" class="navlinemain">SHOP ONLINE</a>
+
+            </li>
+            <li><a href="jewellery.html" class="navlinemain">JEWELLERY</a>
+                <ul>
+                    <li><a href="" style="margin-top: 22px;" >CHAINS</a></li>
+                    <li><a href="">RINGS</a></li>
+                    <li><a href="">NECKLACES</a></li>
+                    <li><a href="">EARINGS</a></li>
+                    <li><a href="">BRACELETS</a></li>
+                    <li><a href="">BANGLES</a></li>
+                </ul> 
+            </li>
+           <a href="index.html"><img id="logo"  src="https://www.kalyanjewellers.net/images/kalyan_logo.svg" alt="kalyan_logo"></a> 
+            <li><a href="aboutUs.html" class="navlinemain">ABOUT US</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+                
+            </li>
+            <li><a href="MUHURAT.html" class="navlinemain">GIFT CARD</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+            <li><a href="AMBASSADORS.html" class="navlinemain">AMBASSADOR</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+            <li><a href="storeLocator.html" class="navlinemain">STORE LOCATOR</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+        </ul>
+    </nav>
+</div>
+        <div id="top-banner">
+            <a href="https://www.candere.com/wedding.html?utm_source=KJOfficial&utm_medium=KJWebsite&utm_campaign=Banner"><img src="https://www.kalyanjewellers.net/images/banners/about_banner.jpg" /></a>
+            <div id="nav-rigth">
+                <ul id="ul-top">
+                    <li><a href="https://www.kalyanjewellers.net/">HOME</a></li>
+                    <li><a href="">AMBASSADORS</a></li>
+                </ul>
+            </div>
+            <img class="curve"src="https://www.kalyanjewellers.net/images/devider.svg"/>
+            <hr>
+        </div>
+        <div id="ambassadors">
+            <div id="vl"></div>
+            <h1 id="top-heading">AMBASSADORS</h1>
+            <div id="parent-ambassadors">
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/amitabh.jpg"/>
+                   </div> 
+                    <div id="ambassadors-detail">
+                            <h4 class="text-uppercase">AMITABH BACHCHAN</h4>
+                            <p>
+                              With a career spanning more than five decades, National
+                                                Award winning actor <a href="https://en.wikipedia.org/wiki/Amitabh_Bachchan" target="_blank" class="text-gray">Amitabh Bachchan</a> is one of the pioneers
+                              of Indian Cinema. Son of the renowned poet Sri Harivansh
+                              Rai Bachchan, Amitabh Bachchan has won several accolades
+                              for his contribution to the arts including the Padma Shri,
+                              Padma Bhushan and Padma Vibhushan.
+                            </p>
+                            <p>  
+                              Mr. Bachchan is widely recognised as one of the most
+                              influential actors of the Indian Film Industry with over
+                              190 films. Apart from his prolific work in the entertainment
+                              industry, he has also been a part of several humanitarian
+                              causes and activities over the years.
+                            </p>
+                            <p>
+                              Mr. Bachchan’s influence spreads far beyond the border
+                              of India, winning the hearts of many across the globe. In
+                              2013, he made an appearance in the Hollywood film Baz
+                              Luhrmann’s The Great Gatsby. In 2007, the Government of
+                              France bestowed him with the highest civilian honour,
+                              the Knight of the Legion of Honour, for all his contributions
+                              towards cinema and beyond.
+                            </p>
+                    </div>
+                </div>
+                <div id="accolades">
+                    <div id="accolades-heading">This is a list of his accolades:<hr></div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                          <p><strong>1984</strong> - Padma Shri</p>
+                          <p><strong>2001</strong> - Padma Bhushan</p>
+                          <p><strong>2007</strong> - France’s highest civilian honour, the “Knight of the Legion of Honour”</p>
+                          
+                          <p><strong>2011</strong> - For his contribution to the entertainment world, an Honorary Doctorate by the&nbsp;Queensland University of Technology&nbsp;in Brisbane</p>
+                                               <p><strong>2011</strong> - “Abhinaya Chakravarthy” Award given by the President of India</p>
+                          <p><strong>2011</strong> - “Maharashtrian of the Year-the Maanbindu” Award given by the President of India</p>
+          
+                         </div>
+                        <div class="col-md-6 col-sm-12">
+                          
+                           <p><strong>2013</strong> - For his outstanding contribution to Indian Cinema, an Honorary Doctorate by the&nbsp;Jodhpur National University</p>
+          
+                          <p><strong>2013</strong> - For his contribution towards 100 years of Indian Cinema, the President of India ‘Medallion of Honour’</p>
+                          <p><strong>2015</strong> - Padma Vibhushan</p>
+                          <p><strong>2015</strong> - Filmfare Awards&nbsp;- the most-nominated performer ever in a major acting category</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="social-media">
+                    <h3>FOLLOW AMITABH BACHCHAN:</h3>
+                    <div id="social-media-icons"> 
+                        <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">JAYA BHADURI BACHCHAN</h4>
+                        <p>
+                         One of the finest actresses in India today, Mrs Jaya Baduri Bachchan has dedicated her life towards cinema, her family and society. 
+                        </p>
+                        <p>  
+                         Starting her acting career at a very young age, she went on to star in some of the most prominent hits of Indian cinema such as Zanjeer, Abhimaan, Chupke Chupke, Sholay and Silsila, with her husband, Amitabh Bachchan.
+                        </p>
+                        <p>Mrs. Bachchan is currently in her third term as a Rajya Sabha M.P, completing an incredibly long stint in public service. She was awarded the Padma Shri in 1993 for her spectacular acting and honoured with the Filmfare Lifetime Achievement Award in 2007.</p>
+                      
+                    </div>
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/jaya.jpg" title="Jaya Bachchan" alt="Brand Ambassador Jaya Bachchan Kalyan Jewellers">
+                   </div> 
+                    
+                </div>
+                <div id="accolades">
+                    <div id="accolades-heading">This is a list of his accolades:<hr></div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                          <p>Eight-time Filmfare award winner </p>
+                          <p>Three-time IIFA award winner </p>
+                          <p>She received the Yash Bharti Award, UP's highest state award. </p>
+                          <p><strong>1992</strong>– Padma Shri</p>
+                          <p><strong>1998</strong>- Omega Award for Excellence: Lifetime Achievement</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                           <p><strong>2007</strong>- Filmfare lifetime achievement award.</p>
+                           <p><strong>2010</strong>- Lifetime Achievement Award at the "Tongues on Fire" film festival in London</p>
+                           <p><strong>2012</strong>- Lifetime Achievement Award at Jaipur International Film Festival</p>
+                           <p><strong>2013</strong>- Master Deenanath Mangeshkar (Vishesh Puraskar) Award for her dedicated services to Indian theatre and cinema</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/katrina.jpg" title="Katrina Kaif" alt="Kalyan Jewellers Brand Ambassador Katrina Kaif 2018">
+                   </div> 
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">Katrina Kaif</h4>
+        <p>
+          Katrina Kaif is one of the most commercially successful actresses in Bollywood today. Her debut in ‘Boom’ (2003) put Katrina Kaif in the public eye and launched her on a successful modelling career. She overcame a poor command of Hindi to break into the big time in Bollywood. An appearance in a Telugu film ‘Malliswari’ in 2004 was followed by a series of big budget Hindi films opposite the top rung of Bollywood heroes starting from ‘Maine Pyar Kyun Kiya’ (2005) with Salman Khan and ‘Namastey London’ (2007) with Akshay Kumar. A series of box-office hits followed including ‘Singh is Kinng’, ‘Ajab Prem Ki Ghazab Kahani’, ‘Zindagi Na Milegi Dobara’, ‘Meri Brother Ki Dulhan’, ‘Welcome’, ‘Ek Tha Tiger’, ‘Dhoom 3’, ‘Jagga Jasoos’ and many others culminating in the 2017 blockbuster ‘Tiger Zinda Hai’.
+        </p>
+        <p>  
+         Believing in giving back to society, Katrina works with Relief Projects India, a charitable trust run by her mother which rescues abandoned baby girls and works to prevent female infanticide. She has also performed in various charity shows to raise funds for various social causes. 
+        </p>
+                        <p>In 2013, Katrina was ranked ninth on Forbes' list of India's best-known entertainers. In 2015, she became the eighth Bollywood actor to have a wax figure installed at Madame Tussauds in London. Katrina has also appeared on Verve's list of most powerful women and the Indian edition of People has described her as "India's Most Beautiful Woman".</p>
+          <p>Her performances in ‘New York’ (2009) and ‘Mere Brother Ki Dulhan’ (2011) earned her nominations for the Filmfare Award for Best Actress. She has won numerous awards at the Stardust Awards, Zee Cine Awards, Star Guild Awards, IIFA Awards and the Big Star Entertainment Awards. </p>
+                    </div>
+                </div>
+                <div id="accolades">
+                    <div id="accolades-heading">This is a list of his accolades:<hr></div>
+                    <div class="row"  style="width:99%">
+                        <div class="col-md-6 col-sm-12" >
+                          <p><strong>2009 and 2011</strong> - Filmfare Award for Best Actress       </p>
+                          <p>Stardust Awards</p>
+                          <p>Zee Cine Awards</p>
+                         
+                        </div>
+                        <div class="col-md-6 col-sm-12"  >
+                           <p>Star Guild Awards</p>
+                          <p>IIFA Awards </p>
+                          <p>Big Star Entertainment Awards</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+    
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">Prabhu Ganesan</h4>
+                        <p>
+                          Fondly called Ilaya Thilagam by his fans, Prabhu Ganesan
+                          is a highly admired figure in Tamil film. He
+                          is the son of revered actor Shivaji Ganesan.
+                        </p>
+                        <p>  
+                          Prabhu has been a prominent part of the South Indian
+                          Cinema industry for over three decades. He is a
+                          multi-lingual star, having worked in all four South
+                          Indian languages throughout his career. Prabhu’s
+                          movie, Chinna Thambi, is one of the biggest hits in
+                          Tamil history. For this performance, he received a best
+                          actor award from the Tamil Nadu state government.
+                        </p>
+                    </div>
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/prabhu.jpg" title="Prabhu Ganesan" alt="2018 Kalyan Jewellers Brand Ambassador Prabhu Ganesan">
+                   </div> 
+
+                </div>
+                <div id="accolades">
+                    <div id="accolades-heading">This is a list of his accolades:<hr></div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                          <p><strong>1991</strong> - Tamil Nadu State Film Aware, Best Actor for Chinna Thambi, one of the biggest hits in Tamil film history</p>
+                          <p><strong>2002</strong> - Tamil Nadu State Film Aware, Best Actor for Charlie Chaplin</p>
+                          <p><strong>2013</strong> - SIIMA SRI Award for an actor with a social conscience</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                          <p>Best Actor award at the Afro-Asian Film Festival, Cairo</p>
+                          <p>First Indian to be given the Ordre des Arts et des Lettres</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+            
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/akkineni.jpg" title="Nagarjuna Akkineni" alt="2018 Kalyan jewellers Brand Ambassador Akkineni Nagarjuna ">
+                   </div> 
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">AKKINENI NAGARJUNA</h4>
+                        <p>
+                          One of the most respected actors and producers of Telugu Cinema, Akkineni Nagarjuna has been a part of over 90 films in the industry during a career spanning over three decades.
+                        </p>
+                        <p>  
+                          Nagarjuna is renowned for his versatile roles and biographical films. His accolades include eleven state Nandi Awards, three Filmfare Awards South and one National Award Special Jury Mention.
+                        </p>
+                        <p>
+                         Son of prominent Telugu Actor Akkineni Nageswara Rao, Nagarjuna is a highly influential figure in South Indian cinema. On the humanitarian front, he is the co-founder of Blue Cross of Hyderabad, an NGO that works towards animal welfare, and is an active campaigner of several AIDS awareness programmes.
+                        </p>
+                    </div>
+                </div>
+                <div id="accolades">
+                    <div id="accolades-heading">This is a list of his accolades:<hr></div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                          <p>Nine State&nbsp;Nandi Awards</p>
+                          <p>Three&nbsp;Filmfare Awards South</p>
+                          <p><strong>1996</strong> - France’s highest civilian honour, the “Knight of the Legion of Honour”</p>
+                          <p><strong>1997</strong> - Padma Vibhushan</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                          <p>South Indian International Movie Award for Best Actor in Telugu</p>
+                          <p>IIFA South Award for best actor in a supporting role, Tamil</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">SHIVA RAJKUMAR</h4>
+                        <p>
+                          Shiva Rajkumar is a veteran actor in the Kannada film
+                          industry. He is the son of revered actor Rajkumar and has
+                          starred in more than 125 films spanning over three decades.
+                        </p>
+                        <p>  
+                          Shiva has set several milestones in Kannada Cinema. His
+                          first three films achieved significant box office success,
+                          giving him the title of "Hat-trick Hero".
+                          Throughout his career, he has received four Filmfare
+                          South awards and four Karnataka State Awards. In 2014,
+                          Vijayanagara Sri Krishnadevaraya University endowed
+                          him with an honorary doctorate.
+                        </p>
+                        <p>
+                          Shiva has been a part of several social causes and often
+                          lends his name to charitable activities.
+                        </p>
+                    </div>
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/shiva.jpg" title="Shiva Rajkumar" alt="2018 Kalyan Jewellers Brand Ambassador Shiva Rajkumar">
+                   </div> 
+                    
+                </div>
+                <div id="accolades">
+                
+                    <div id="accolades-heading">This is a list of his accolades:<hr></div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                          <p>Four Karnataka State Awards</p>
+                          <p>Seven Filmfare south awards</p>
+                          <p>Four South Indian International Movie Awards</p>
+                          <p><strong>2012</strong> - SIIMA&nbsp;Award for Social Responsibility</p>                
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                          <p><strong>2016</strong> -  Kohinoor of South India – Presented by the British South India Council of Commerce</p>
+                          <p><strong>2011</strong> - Visionnaire Entertainment in London.</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+              
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/manju.jpg" title="Manju Warrier" alt="2018 Kalyan Jewellers Brand Ambassador Manju Warrier">
+                    </div> 
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">MANJU WARRIER</h4>
+                        <p>
+                          Malayalam cinema’s first female superstar, Manju Warrier
+                          is one of the most accomplished actresses in the industry.
+                          She is often slated as the only female actress who could
+                          carry a movie on her shoulders and make it a major
+                          box-office success.
+                        </p>
+                        <p>  
+                          Apart from acting, she is widely renowned as an accomplished
+                          Bharatnatyam dancer. She partakes in several dance programs
+                          where she showcases this beautiful classical art form.
+                          Manju has won a record-breaking five Filmfare South
+                          Awards for Best Actress. She is involved in a variety of
+                          social programmes and awareness campaigns.
+                        </p>
+                    </div>
+                </div>
+                <div id="accolades">
+                    <div id="accolades-heading">This is a list of his accolades:<hr></div>
+                    <div class="row" style="width:100%">
+                        <div class="col-md-6 col-sm-12">
+                          <p><strong>1996</strong> - Kerala State Film Awards Best Actress&nbsp;</p>
+                          <p><strong>1999</strong> - National Film Awards Special Jury Mention</p>
+                          <p><strong>2014 and 2013</strong> - Manorama Newsmaker of the year</p>
+                          <p><strong>2015</strong> - Karmasreshta Puraskaram from Mother Teresa&nbsp;Charitable trust</p>
+                          <p>5 Filmfare Awards South, more than any other Malayalam actress</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                          <p>3 Vanitha Film Awards</p>
+                          <p>3 Asiavision Awards</p>
+                          <p>4 Asianet Film Awards</p>
+                          <p>South Indian International Movie Awards for best actress</p>
+                          <p>2 NAFA Awards for best actress</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="social-media">
+                    <h3>FOLLOW MANUJU WARRIER:</h3>
+                    <div id="social-media-icons"> 
+                        <a target="_blank" href="https://www.facebook.com/theManjuWarrier/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/themanjuwarrier"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <!-- <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">Wamiqa Gabbi</h4>
+                        <p>
+                          Wamiqa Gabbi, is an Indian film actress, who works in Hindi, Punjabi, Malayalam, Tamil and Telugu films. She made her hindi debut with lead role in Bollywood film “SIXTEEN” which released in the year 2013. This was followed by eminent roles in Punjabi films “Tu Mera 22 Main Tera 22” opposite Yo Yo Honey Singh and “Ishq Brandy”. 
+                        After this, she did south films like ‘Maalai Nerathu Mayakkam’ (Tamil), ‘Bhale Manchi Roju’ (Telugu), ‘Godha’ and ‘Nine’ (Malayalam).
+                        </p>
+                        <p>  
+                         Her performances were very well received and appreciated by film critics.
+        Wamiqa Gabbi became widely popular in Punjab after she was featured in the Punjabi song “Angrezi Wali Madam”. Also, her impactful performance in short film “Ishq Haazir Hai” opposite Diljit Dosanjh made her a household name. 
+                        </p>
+                        <p>Her most prominent roles were seen in the movies Sixteen, Maalai Nerathu Mayakkam, Godha, Dil Diyan Gallan and Nine.</p>
+                        <p>The 25-year old actress has done over 15 films and is truly a youth icon and has a huge fan base across the country. Wamiqa has a following of around 1.1 Million on her official Instagram handle. She is a trained Kathak dancer was inclined towards acting at a very early age. At the age of 10, she featured as child artist in Punjabi TV Serial “Saude Dillan De”.</p>  
+                    </div>
+                    <div id="ambassadors-image"> 
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/wamiqa.jpg" title="Wamiqa Gabbi" alt="2020 Kalyan Jewellers Regional Brand Ambassador Wamiqa Gabbi">
+                    </div> 
+                    
+                </div>
+                <div class="col-12">
+                    <p>The actress has won numerous awards for her performances over the years.
+    The actress’ 2019 releases include Nine (Malayalam), Nadhoo Khan and Dil Diyan Gallan (Punjabi) opposite Parmish Verma and Nikka Zaildar 3 opposite Ammy Virk.
+    Her future projects include ’Galwakdi’ with Tersem Jassar,  ‘Kaun Aa Yaar’ with Jassi Gill.</p>
+                    
+                  </div>
+                  <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+          
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/pooja-sawant.jpg" title="Pooja Sawant" alt="2020 Kalyan Jewellers Regional Brand Ambassador Pooja Sawant">
+                        </div> 
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">Pooja Sawant</h4>
+                        <p>Pooja Sawant is an actress known for her work in Marathi cinema and television. The 29-year old actress recently made her Bollywood debut starring alongside Vidyut Jammwal in Hindi action adventure thriller Junglee, directed by Chuck Russell.</p>
+                        <p>The actress kickstarted her career in Marathi entertainment industry 10 years ago. She made her debut in the Marathi film Kshanbhar Vishranti in 2010. This was followed by Zhakaas in 2011 which was very well received by the audience. However, she came into the spotlight by playing the role of “Jenny” in the multi-starrer Marathi movie Satrangi Re which released in 2012. </p>
+                        <p>In 2014, Pooja Sawant featured in blockbuster movie “Poshter Boyz” produced by Shreyas Talpade. The film was so successful and entertaining that it went on to be adapted with a Bollywood version featuring Sunny Deol, Bobby Deol and Shreyas Talpade in lead roles. The Marathi actress is also well known for her impactful performances in movies like Marathi action drama Daagdi Chaawl in 2015, and the horror comedy film Cheater in 2016.</p>
+                        
+                      </div> 
+                    </div>
+                    <div class="col-12">
+                        <p>The Bollywood actress has a massive following across social media platforms. She has around 1.2 million followers on her Instagram handle and 220K+ followers on her official Facebook page.</p>
+        <p>Pooja Sawant also happens to be a fantastic dancer. Before her film debut, the actress has appearances in multiple dance reality shows such as Boogie Woogie, Eka Peksha Ek Jodich Mamla and Wajale ki Bara. These played an essential role in cementing her path to showbiz.</p>
+
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">Ritabhari Chakraborty</h4>
+                        <p>Ritabhari Chakraborty is a prominent name in the Indian television and film industry. She started her modelling career when she was still in high school. She made her first appearance in television after her 10th boards as the female protagonist of the popular Indian Bengali television show ‘Ogo Bodhu Sundari’ and there was no looking back! In 2011, she made her big screen debut. 3 years ago Ritabhari started producing content and made a music video called ‘Orrey Mon’ alongside Ayushmann Khurrana which has more than 20 million views on YouTube.</p>
+                        <p>She continued acting and producing and made more content with actors like Kalki Koechlin, Parambrata Chatterjee, Anurag Kashyap, Rajat Kapoor and so on. She ventured into writing with the short film ‘Naked’ which she produced as well, was even nominated for Filmfare.</p>
+                        <p>She was in the cast of Bollywood horror movie, ‘Pari’, which featured Anushka Sharma in the lead role.</p>
+                        <p>In 2019, her production, SCUD also produced ‘Fool for Love’ with Anurag Kashyap, a short film featuring Ritabhari herself as the female protagonist, which has won many accolades for the mind blowing performances.</p>
+                     
+                    </div>
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/ritabhari.jpg" title="Ritabhari Chakraborty" alt="2020 Kalyan Jewellers Regional Brand Ambassador Ritabhari Chakraborty ">
+                   </div> 
+                    
+                </div>
+                <div class="col-12">
+                                 
+                    <p>Voted by The Times of India as the ‘Most Desirable Woman’ of 2018 in East, she is also amongst the top 50 Most Desirable Woman of the country voted by The Times of India leaving many Bollywood actors behind.</p>
+                    <p>Besides acting, she also runs an NGO, ‘SCUD Society for Social Communication’, which aims at providing medical camp, cultural activity and training for economic empowerment of the under privileged people.</p>
+                    <p>Ritabhari is a confident young woman and talented professional who has endorsed over 100+ Brands and had one of the highest following on Social media which got her in the list of most promising youth icons to use “Social media” for good by Facebook which was moderated by Global Icon Priyanka Chopra.</p>
+                    <p>She is also the first Indian celebrity to do an International Travel Live show to promote the Facebook live feature by traveling from the Facebook headquarters in SanFrancisco to London and Switzerland.</p>
+                    <p>From Josh Talk, Ink Talk to her recent Tedx talk she is not scared to voice her opinion or speak about her journey without any inhibition.</p>
+                    <p>Her last release was ‘Shesh Theke Shuru’ with Bengali super star Jeet which has been a superhit and her performance has been praised by all.</p>
+                    <p>Ritabhari will next portray the role of a woman priest in Brahma Janen Gopon Kommoti, releasing on 6th March,2020. It has already created a lot of buzz accross social media.</p>
+                    <p>Social media reach - (She has 1.4 million followers on Instagram and 2 million on Facebook)</p>
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+                <div id="inner-ambassadors">
+                    <div id="ambassadors-image">
+                        <img src="https://www.kalyanjewellers.net/images/ambassadors/kinjal-rajpriya.jpg" title="Kinjal Rajpriya" alt="Kinjal Rajpriya">
+                   
+                    </div> 
+                    <div id="ambassadors-detail">
+                        <h4 class="text-uppercase">Kinjal Rajpriya</h4>
+                        <p>Kinjal Rajpriya an Indian film Actress, made her on screen debut in 2015 and is best remembered for her performance in the Gujarati comedy Chhello Divas – A New Beginning. The film was a mega blockbuster and Kinjal’s performance was highly acclaimed. She has been featured in a number of Gujarati films which include Short Circuit, Rough Book (which won numerous nominations and awards at International Film Festivals) and Shu Thayu And Saheb where she played the female lead. She has also acted in the Bollywood comedy movie Days of Tafree (2016). </p>
+                        <p>Her last released film, Kem Chho (2019) was yet another blockbuster hit. Dhummas - her latest release on Amazon Prime, is already creating a buzz all around, with edgy critical acclamation. </p>
+                        <p>For her dedication and distinguished contribution in the field of entertainment and media, Kinjal Rajpriya was awarded the Glory of Gujarat (2019) by the then Governor of Gujarat, Shri Om Prakash Kohli.</p>
+                    
+                    </div>
+                </div>
+                <div class="col-12">
+                       
+                    <p>Kinjal Rajpriya has a strong social media following and and her digital video series titled, 'Road To Remember' was awarded the Best Travel Campaign by Gujarat Tourism Travel &amp; Excellence Award 2021. </p>
+                    <p>The actor has around 585K followers on her official Instagram handle.</p>
+                </div>
+                <div id="social-media">
+                    <!-- <h3>FOLLOW AMITABH BACHCHAN</h3> -->
+                    <div id="social-media-icons"> 
+                        <!-- <a target="_blank" href="https://www.facebook.com/amitabhbachchan/"><span class="iconify" data-icon="et:facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/SrBachchan"><span class="iconify" data-icon="et:twitter"></span></a>
+                        <a target="_blank" href="https://www.instagram.com/amitabhbachchan/"><span class="iconify" data-icon="ph:instagram-logo-thin"></span></a> -->
+                    </div>
+                    <hr>
+                </div>
+             
+            </div>
+        </div>
+        <div>
+            <div id="input-content">
+               <div id="flex-box"> <div id="input-box" style="font-weight: 300;">SUBSCRIBE THE KALYAN NEWSLETTER</div>
+                <input type="email" placeholder="Email address">
+               <div id="iconright"><i class="fa-solid fa-chevron-right"></i></div> 
+            </div></div>
+        
+            <div id="footercontainer">
+                <div id="footer-left"  >
+                    <div id="footer-left-top">
+                        <div>
+                            <select name="" id="selected" onclick="myFun()" >
+                                <option value="" >SELECT YOUR COUNTRY</option>
+                                <option value="">INDIA</option>
+                                <option value="">UAE</option>
+                                <option value="">QATAR</option>
+                                <option value="">OMAN</option>
+                                <option value="">KUWAIT</option>
+                            </select>
+                        </div>
+                        <div id="middle"><div id="iconcircle" ><i class="fa-solid fa-phone" style="font-size: 12px;color: red;"></i></div><p style="display: inline;">1800 - 4257333</p></div>
+                        <div><p >info@kalyanjewellers.net</p></div>
+                        <div class="navICON1" style="padding-left: 20px;">
+                            <i  class="fa-brands fa-facebook"></i>
+                            <i  class="fa-brands fa-twitter-square"></i>
+                            <i  class="fa-brands fa-youtube"></i>
+                            <i  class="fa-brands fa-instagram-square"></i>
+                            <i class="fa-brands fa-whatsapp-square" style="color:#25d366;"></i>
+                        </div>
+                    </div>
+                    <div id="footer-left-bottom">
+                        <div>
+                            <p>ABOUT US</p>
+                            <p>KALYAN NEWS</p>
+                            <p>CONTACT US</p>
+                            <p>STORE LOCATOR</p>
+                            <p>MEDIA</p>
+                            <p>THE KALYAN POMISE</p>
+                            <P>JEWELLERY WIKKI</P>
+                            <P>INVESTORS</P>
+                            
+                        </div>
+                        <div style="height: 135px; border-left: 1px solid #787e83 ;">
+                            <p>FAQ</p>
+                            <p>CAREER</p>
+                            <p>BE INFORMED</p>
+                            <p>EASY INSTALLMENT PLAN</p>
+                            <p>PARTNERING WITH TRUST</p>
+                            <P>GOLD RATE TODAY</P>
+                            <P>ONLINE PURCHASE</P>
+                        </div>
+                        <div  style="height: 100px; border-left: 1px solid #787e83 ;">
+                            <p>BLOG</p>
+                            <p>WHY BUY FROM US</p>
+                            <p>PRIVACY POLICY</p>
+                            <p>TERMS AND CONDITIONS</p>
+                            <p>SITEMAP</p>
+                            <P></P>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="footer-right">
+                    <h4 style="color:#212529; font-family:sans-serif; font-weight: 300;margin-top: 0px;">FEEDBACK</h4>
+                    <input type="text" placeholder="Full Name">
+                    <input type="number" placeholder="Mobile No:">
+                    <input type="email" placeholder="Email">
+                    <select name="feedback" id="feedbackselect" style="color: #787e83; margin-left: -3px;" >
+                        <option value="" >Feedback type</option>
+                        <option value="">Store Related Complaints</option>
+                        <option value="">Product Related Complaints</option>
+                        <option value="">General Queries</option>
+                        <option value="">Other Enquires</option>
+                    </select>
+                    <button id="submit">SUBMIT</button>
+                </div>
+            </div>
+            <h6 style="text-align: center;color: #787e83;font-family: sans-serif;font-weight: 200;">Copyright © 2022 Kalyan Jewellers. All rights reserved</h6>
+        </div>
+    </div>
+</body>
+</html>

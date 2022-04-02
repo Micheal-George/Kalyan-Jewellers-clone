@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/47316d587b.js" crossorigin="anonymous"></script>
+    <style>
+        #container{
+            /* border: 1px solid blue; */
+            width: 90%;
+            margin: auto;
+            
+        }
+        #header{
+            /* border: 1px solid black; */
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 20% 20% 40% 20%;
+        }
+       
+        #logo{
+            height: 140px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        #socialLogo{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+        }
+      
+
+       /* DROP DOWN  */
+       .dropbtn {
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+        }
+  
+        .dropdown {
+            display: flex;
+            position: relative;
+            /* display: inline-block; */
+            justify-content: center;
+            align-items: center;
+           
+        }
+  
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 
+                0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+  
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+  
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+  
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main Body */
+
+        #mainbody{
+            /* border: 2px solid red; */
+            width: 100%;
+            margin: auto;
+            
+            display: grid;
+            grid-template-columns: 20% 20% 59%;
+
+        }
+       
+        #mainbody  img{
+            
+           height: 450px;
+           width: 580px;
+           margin-left: 25PX;
+        
+        }
+        #box1 h3{
+            color: #CD2027;
+            margin: 3%;
+            text-align: center;
+            
+        }
+        
+        #box1 select{
+            height: 36px;
+            width: 160px;
+            padding-left: 12px;
+        }
+         button{
+            height: 36px;
+            width: 160px;
+            margin-top: 20px;
+            border: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #subbox h2{
+            text-align: left;
+        }
+        #box1 p{
+            text-align: left;
+            margin: 2%;
+        }
+        hr{
+            height: 1px;
+            background-color: black;
+        }
+
+        #box2
+        {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: space-between;
+            
+            gap: 12px;
+            padding-left: 20px;
+            margin-bottom: 50px;
+        }
+        #otherlocation{
+            /* border: 1px solid red; */
+            padding-left: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        #footer
+        {
+            text-align: center;
+        }
+        i{
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div><img id="logo" src="kalyan_logo.svg" alt="">
+            </div>
+
+            <div id="socialLogo">
+          <i class="fa-brands fa-instagram-square fa-lg"></i> 
+            <i class="fa-brands fa-facebook-f fa-lg"></i>
+            <i class="fa-brands fa-twitter fa-lg" ></i>
+            <i class="fa-brands fa-youtube fa-lg"></i>
+            <i class="fa-solid fa-earth-africa fa-lg"></i>
+            </div>
+
+            <div></div>
+
+            <div class="dropdown">
+            <button class="dropbtn">
+            <img src="india-flag.png"  width="15" height="15"> India (भारत) &nbsp; &nbsp;<i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">    
+            <a href="#"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132503/iflag.jpg" width="20" height="15"> India</a>
+            <a href="#"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132504/uflag.jpg"width="20" height="15"> USA</a>
+            <a href="#"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132502/eflag.jpg" width="20" height="15"> England</a>
+            <a href="#"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132500/bflag.jpg"width="20" height="15"> Brazil</a>
+            </div>
+            </div>
+        </div>
+
+        <div id="mainbody">
+            <div id="box1">
+                <h3>Search For Kalyan Jewellers India</h3>
+                <select id="location">
+                    <option value="">Ludhiana</option>
+                    <option value="">Haryana</option>
+                    <option value="">Maharashta</option>
+                    <option value="">UtterPardes</option>
+                    <option value="">Bihar</option>
+                    <option value="">Kerala</option>
+                    <option value="">Jammu</option>
+                    <option value="">Pakistan</option>
+                    <option value="">UtterPardes</option>
+                    <option value="">Bihar</option>
+                    <option value="">Kerala</option>
+                    <option value="">Jammu</option>
+                    <option value="">Pakistan</option>
+                </select>
+                <button>Submit</button>
+               <h3 style="text-align: left; color: black;">Looking For</h3>
+               <p>Rang</p>
+               <p>Gold </p>
+               <p>Gold and Diamond  </p>
+               <p>Vedha
+            </p>
+               <p>Mudhra</p>
+               <p>Generic</p>
+               <p>Nimah</p>
+               <p>Women's Accessories</p>
+               <p>Ziah</p>
+               <p>Gemstone</p>
+            </div>
+
+
+            <div>
+                <div id="box1">
+                    <h3>Location</h3>
+                    <p style="margin-left: 15px;">kalyan jewellers
+                        Sco B/19/188, Rani Jhansi Road, ghumar mandi, ludhiana, punjab - 141001.</p>
+                        <button> <i class="fa-solid fa-phone" style="color: #118AFF; margin: 2%;"></i>&nbsp; 8950088808</button>
+                        <h5 style="text-align: left; margin: 2%">Mon-Sun</h5>
+                       <p> <i class="fa-solid fa-circle" style="color: green; margin: 4%;"></i>10:30 AM - 8:30 PM</p>
+                        <p><i class="fa-solid fa-circle" style="color: #118AFF; margin: 4%"></i>Get Directions</p>
+                        <button style="font-weight: 200;"> <i class="fa-solid fa-earth-americas" style="color: #118AFF; margin: 2%;"></i>&nbsp; More Details</button>
+                        
+                </div>
+            </div>
+
+            <div><img src="map2.png"></div>
+        </div>
+        <hr>
+        <h3>MORE LOCALITIES</h3>
+        <div id="box2">
+            <div id="otherlocation">
+                <img id="logo" src="kalyan_logo.svg" alt="">
+                <h3 style="color: grey; margin: 0;">ghumar mandi</h3>
+                <h4 style="margin: 2%;">MY KALYAN MINI STORE</h4>
+                <p style=" padding-right: 12px; margin: 0%;">SCO B/19/188, Rani Jhansi Road, Ghumar mandi, Ludhiana, Punjab - 141001.</p>
+                <button> <i class="fa-solid fa-phone" style="color: #118AFF; margin: 2%;"></i>&nbsp; 8950088808</button>
+                <h5 style="text-align: left; margin: 2%">Mon-Sun</h5>
+                <p> <i class="fa-solid fa-circle" style="color: green; margin: 4%;"></i>10:30 AM - 8:30 PM</p>
+                 <p><i class="fa-solid fa-circle" style="color: #118AFF; margin: 4%"></i>Get Directions</p>
+                 <button style="font-weight: 200;"> <i class="fa-solid fa-earth-americas" style="color: #118AFF; margin: 2%;"></i>&nbsp; More Details</button>
+
+            </div>
+           
+            <div id="otherlocation">
+                <img id="logo" src="kalyan_logo.svg" alt="">
+                <h3 style="color: grey; margin: 0;">ghumar mandi</h3>
+                <h4 style="margin: 2%;">MY KALYAN MINI STORE</h4>
+                <p style=" padding-right: 12px; margin: 0%;">SCO B/19/188, Rani Jhansi Road, Ghumar mandi, Ludhiana, Punjab - 141001.</p>
+                <button> <i class="fa-solid fa-phone" style="color: #118AFF; margin: 2%;"></i>&nbsp; 8950088808</button>
+                <h5 style="text-align: left; margin: 2%">Mon-Sun</h5>
+                <p> <i class="fa-solid fa-circle" style="color: green; margin: 4%;"></i>10:30 AM - 8:30 PM</p>
+                 <p><i class="fa-solid fa-circle" style="color: #118AFF; margin: 4%"></i>Get Directions</p>
+                 <button style="font-weight: 200;"> <i class="fa-solid fa-earth-americas" style="color: #118AFF; margin: 2%;"></i>&nbsp; More Details</button>
+
+            </div>
+        </div>
+        
+    </div>
+    <div id="footer">
+        <hr>
+        <p>© 2022 Kalyan Jewellers India. All rights reserved.
+            <p>sekel logo Powered by Sekel Tech.</p>
+        </p>
+    </div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

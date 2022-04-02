@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUHURAT</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/2a05cd7cd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47316d587b.js" crossorigin="anonymous"></script>
+    <style>
+        img{
+            width: 100%;
+            height: 88%;
+        }
+        #top-banner{
+            width: 100%;
+            /* height: 650px; */
+            margin: 0px;
+            margin-top: 20px;
+        }
+   
+        /* for nav-btw */
+        #nav-btw{
+            background-color: #f7d8b2;
+            margin: 0px;
+        }
+        #nav-ul{
+                    display:flex;
+                justify-content: space-between ;
+                align-items: center;
+                height: 50px;
+                width: 97%;
+                padding: 0px 6px;
+                margin: 0px;
+
+                }
+        #nav-ul > li{
+            list-style-type: "";
+            color: gray;
+            font-size: 18px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+        #btn-shop > a{
+            color: black;
+            font-size: 16px;
+            
+        }
+        #btn-shop{
+            border: 1px solid black;
+            height: 50px;
+            width: 130px;
+            background-color: white;
+        }
+        #detail-section{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        #paraText> p{
+            color: gray;
+            font-size: 24px;
+        }
+        #heading{
+            font-size: 20px;
+        }
+
+        /*grid css*/
+        #states-wise{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        /* width: 60%;
+        margin-left: 25px; */
+        }
+        #states-wise> img{
+            width: 50%;
+        }
+        .col-lg-4{
+            margin: auto;
+        }
+        figure{
+            margin: 10px;
+        }
+    /* text effect */
+    figure {
+    position: relative;
+    width: 400px;
+}
+
+  /* img {
+    display: block;
+    width: 100%;
+} */
+
+figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.figcaption--blur {
+    backdrop-filter: blur(5px);
+}
+
+figcaption > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+figcaption:hover {
+    opacity: 1;
+}
+
+figcaption:hover > * {
+    transform: translateY(0);
+}
+
+.text-uppercase {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.oi-btns-hldr {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    border: 1px solid white;
+    
+            height: 50px;
+            width: 130px;
+            background-color: white;
+            text-align: center;
+            background: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.oi-btns-hldr > a{
+    text-decoration: none;
+    color: white;
+}
+hr{
+    border: 2px solid red;
+    margin: 0px;
+}
+a{
+            text-decoration: none;
+            color: gray;
+}
+/* style for video */
+
+.video-content-wrap{
+    height: 600px;
+    width: 99%;
+    /* border: 2px solid red; */
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+.do-preview-video{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px ;
+    margin-bottom: 80px ;
+}
+.do-preview-video a i {
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #fff;
+}
+/* curve */
+        .curve{
+            height:42px ;
+            width: 8%;
+            margin-left: 50%;
+            transform: translate(-50%, 0%);
+            -webkit-transform: translate(-50%,12%);
+            margin-top: -40.1px;
+        }
+        #vl{
+            margin-top: 30px;
+            border-left: 2px solid black;
+            height: 120px;
+            margin-left: 450px;
+        }
+        body {
+            /* overflow: hidden;  */
+            margin: 0;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        }
+        body::-webkit-scrollbar {
+            display: none; /* for Chrome, Safari, and Opera */
+        }
+/* navbar TOP */
+#topbox{
+        height: 43px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    /* topleft side content */
+    #topboxleft{
+       height: 43px;
+        width: 360px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+            /* topleft side innercontent */
+    
+    #topboxleftinner{
+        height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+
+         /* topright side content */
+    
+    #topboxright{
+       height: 43px;
+        width: 270px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        font-family: sans-serif;
+        
+    }
+    
+     /* topright side inner content */
+    #topboxrightinner{
+       height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex; 
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer; 
+        gap: 5px;   
+    }
+
+    /* social media icons */
+    .navICON{
+        display: flex;
+       color:#e30613 ;
+        font-size: 14px;
+        justify-content: space-around;
+        gap: 10px;
+       margin-top: -7px;
+    }
+    i{
+      border-radius: 50px;
+        font-size: 24px;   
+    }
+   a{
+     text-decoration: none;
+     color: #777171;
+   }
+   /*Main navbar */
+   #topboxleftinner>div{cursor: pointer;}
+
+#topboxleftinner>div:hover{ color:red;}
+   /* ---------------------------START OF NAVBAR CHANGES CSS PART---------------------- */
+   #listnav ul{
+       padding: 0 -15px;
+       margin: 0;
+       float:initial;
+       margin-left: 70px;
+       margin-top: -40px;
+   }
+   #listnav ul li{
+       background: white;
+       position: relative;
+       list-style: none;
+       display: inline-flex;
+       margin-right: 2px;
+       margin-left: 5px ;
+        
+   }
+   .navmain{margin-left: 50px; ;}
+   .navlinemain{
+       background: white;
+   }
+   .navlinemain:hover{
+        cursor: pointer;
+        border-bottom: 1.5px solid #e30613;color: #e30613;   
+   }
+   #listnav ul li a{
+       display: block;
+       padding: 0 15px;
+       color: #777171;
+       text-decoration: none ;
+       line-height: 40px;
+       font-size: 15px;
+   }
+   #listnav>ul>li>ul>li>a{
+       color: black;
+       background-color: white;
+       font-size: medium;
+   }
+   #listnav>ul>li>ul>li>a:hover{
+       border: none;
+       color: lightgrey;
+   }
+   #listnav ul ul{
+        position: absolute;
+        top: 60px;
+        display: none;
+
+   }
+   #listnav ul li:hover > ul{
+       display: block;
+       transform: -webkit-transform translate(-50%, 0%);
+   }
+   #listnav>ul>li>ul>li{
+       width: auto;
+       margin-left: -95px; 
+   }
+   #listnav ul ul li{
+       width: 100px;
+       float: none;
+       display: list-item;
+       position: relative;
+   }
+   /* navbar center logo image */
+   #logo{
+       height: 150px;
+       width: 130px;
+       margin:-20px 20px -40px 20px 
+   }
+   #topboxleftinner>div{cursor: pointer;}
+
+   #topboxleftinner>div:hover{ color:#212529;}
+
+  .hov:hover{border-bottom: 1.5px solid #e30613;color: #e30613;}
+  
+  .col:hover{color:#212529;}
+   
+  #input-content{ margin-top: -50px;   width: 102%;    height: 30px;    padding: 30px 0px 80px 0px ; margin-left: -5px;  background-color: #e6e7e2;   border-top: 3px solid #e30613 ;   }
+   
+   
+   #flex-box{    height: 30px;    width: 100%;    display: flex;    box-sizing: border-box;    justify-content: center;    gap: 5px;    }
+  
+  
+   #input-box{       border: 1px solid black;   height: 18px;;   padding: 8px 10px  5px 10px;   background-color: white;
+                     border: none;   color: #212529;   font-family: sans-serif;   font-size: 14px;    }
+  
+  
+   #input-box+input{    padding-left: 10px;     padding-top: 2px;    width: 280px;     border: none;    }
+  
+  
+   #iconright{    background-color: #e30613;     color: white;    width: 30px;   display: flex;
+                   justify-content: center;    align-items: center;  cursor: pointer; }
+  
+                   #iconright:hover{color:#212529; ;}
+   #footercontainer{       width: 100%;    height: 320px;       padding-top: 25px;    display: flex;
+                           justify-content: center;    gap: 30px;   }
+
+
+   #footer-left{     width: 820px;     height: 250px;      }
+  
+  
+   #footer-right{     width: 350px;    height: 270px;     box-sizing: border-box;    }
+  
+ 
+    #footer-right>input,#footer-right>select{    display: block;    width: 100%;    padding: 15px 0px 5px 15px;    border: none;
+                                                   border-bottom: 2px solid  #e6e7e2;;     font-size: 17px;   }
+  
+
+   #submit{     display: block;     margin-left: 82%;   margin-top: 20px;   padding: 5px 10px;  border: 1px solid #e30613 ;
+                   color: #e30613;     background-color: white;    cursor: pointer;     }
+
+
+   #footer-right>select{    color:#212529;      font-family:sans-serif;    font-weight: 300;
+                       width:105%;     padding-bottom: 0px;        cursor: pointer;        }
+
+
+ #footer-right>input:hover,#footer-right>select:hover {      outline:none!important;     }
+
+
+   #submit:hover{   color: white;   background-color: #e30613;     }
+
+   
+   #footer-left-top{    width: 100%;     height: 50px;   margin-top: 20px;    display: flex;      background-color: white;   }
+ 
+ 
+   #footer-left-top>div{       width: 25%;     height: 100%;}
+
+   #footer-left-top select{    width: 170PX;       height: 31px;     font-size: 10px;    font-weight: 300;
+                           font-family: sans-serif;             padding: 8px 10px;     color: #e30613;     border-color: #e30613;}
+
+   #footer-left-top p{    font-size: 13px;    font-family: sans-serif;    color: #e30613;    cursor: pointer;   }
+
+   .navICON1{     display: flex;    color: red;     font-size: 22px;     gap: 7px;
+       
+    }
+    .navICON1>i{ cursor: pointer;}
+    .navICON1>i:hover{color:  #212529;}
+    #footer-left-bottom{   display: flex;  }  
+ 
+    #footer-left-bottom>div{width: 31%;height: 180px;margin-top: 25px;}
+
+  #footer-left-bottom p{ font-size: 11px;font-family: sans-serif;line-height: 7px;margin-left: 15px; color: #212529;cursor: pointer;}
+  
+  #footer-left-bottom P:hover,#footer-left-top p:hover{ color: #c4c5c1;}
+
+#middle{display: flex;cursor: pointer;}
+
+ #iconcircle{height: 25px;     margin: 5px 10px;     width: 25px;     border: 1px solid #e30613;  display:flex ;  justify-content: center;
+                             align-items: center;     border-radius: 50%;      }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <!-- navbar TOP-->
+      <div id="topbox">
+        <div id="topboxleft">
+            <div id="topboxleftinner">
+                 <div>MY KALYAN /</div>
+                 <div>MEDIA /</div>
+                 <div>KALYAN NEWS /</div>
+                 <div>GOLD RATES /</div>
+                 <div>DIGITAL GOLD</div>
+            </div>
+        </div>
+     
+       <div></div>
+     <div id="topboxright">
+         <div id="topboxrightinner">
+            <div>FEEDBACK /</div>
+            <div>CONTACT /</div>
+            <div class="navICON">
+                <i  class="fa-brands fa-facebook"></i>
+                <i  class="fa-brands fa-twitter-square"></i>
+                <i  class="fa-brands fa-youtube"></i>
+                <i  class="fa-brands fa-instagram-square"></i>
+            </div>
+         </div> 
+     </div>
+    </div>
+
+    <div class="navmain">
+        <nav style="font-family: 'PT Sans', sans-serif;" id="listnav" >
+            <ul>
+                <li><a href="ourbrandsAnokhi.html" class="navlinemain">OUR BRANDS</a>
+                        
+                    <ul>
+                        <!-- <div style="width: 300%; margin-left: -95px;"><h5 style="text-decoration: underline;">BRANDS FAMILY</h5></div> -->
+                        <li><a href="ourbrandsMudra.html" style="margin-top: 22px;">MUDHRA</a></li>
+                        <li><a href="ourbrandsNimah.html">NIMAH</a></li>
+                        <li><a href="ourbrandsAnokhi.html">ANOKHI</a></li>
+                        <li><a href="ourbrandsRang.html">RANG</a></li>
+                        <li><a href="">TEJASVI</a></li>
+                        <li><a href="">ZIAH</a></li>
+                    </ul> 
+                </li>
+                <li><a href="MUHURAT.html" class="navlinemain">MUHURAT</a>
+                    <ul>
+                      <li><a href="muhuratGujrat.html" style="margin-top: 22px;">GUJRAT</a></li>
+                      <li><a href="muhuratMah.html">MAHARASHTRA</a></li>
+                      <li><a href="muhuratPunjab.html">PUNJAB </a></li>
+                      <li><a href="muhuratRajasthan.html">RAJASTHAN</a></li>
+                      <li><a href="">UP </a></li>
+                    </ul> 
+                </li>
+                <li><a href="shopOnline.html" target="_blank" class="navlinemain">SHOP ONLINE</a>
+    
+                </li>
+                <li><a href="jewellery.html" class="navlinemain">JEWELLERY</a>
+                    <ul>
+                        <li><a href="" style="margin-top: 22px;" >CHAINS</a></li>
+                        <li><a href="">RINGS</a></li>
+                        <li><a href="">NECKLACES</a></li>
+                        <li><a href="">EARINGS</a></li>
+                        <li><a href="">BRACELETS</a></li>
+                        <li><a href="">BANGLES</a></li>
+                    </ul> 
+                </li>
+               <a href="index.html"><img id="logo"  src="https://www.kalyanjewellers.net/images/kalyan_logo.svg" alt="kalyan_logo"></a> 
+                <li><a href="aboutUs.html" class="navlinemain">ABOUT US</a>
+                    <!-- <ul>
+                        <li></li>
+                        ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                    </ul> -->
+                    
+                </li>
+                <li><a href="MUHURAT.html" class="navlinemain">GIFT CARD</a>
+                    <!-- <ul>
+                        <li></li>
+                        ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                    </ul> -->
+                </li>
+                <li><a href="AMBASSADORS.html" class="navlinemain">AMBASSADOR</a>
+                    <!-- <ul>
+                        <li></li>
+                        ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                    </ul> -->
+                </li>
+                <li><a href="storeLocator.html" class="navlinemain">STORE LOCATOR</a>
+                    <!-- <ul>
+                        <li></li>
+                        ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+    </div>
+        <div id="top-banner">
+            <a href="https://www.candere.com/wedding.html?utm_source=KJOfficial&utm_medium=KJWebsite&utm_campaign=Banner"><img src="https://www.kalyanjewellers.net/images/muhurat2/banner/muhurat-home.jpg" /></a>
+            <img class="curve"src="https://www.kalyanjewellers.net/images/devider-orange.svg"/>
+        </div>
+        <div id="nav-btw">
+            <ul id="nav-ul">
+                <li><a href="#gujarat">Gujarat</a></li>
+                <li><a href="#maharashtra">Maharashtra</a></li>
+                <li><a href="#andrapradesh-telangana">Andhrapradesh / Telangana</a></li>
+                <li><a href="#karnataka">Karnataka</a></li>
+                <li><a href="#tamilnadu">Tamil Nadu</a></li>
+                <li><a href="#kerala">kerala</a></li>
+                <li><a href="#punjab">Punjab</a></li>
+                <li><a href="#delhi">Delhi</a></li>
+                <li><a href="#rajasthan">Rajasthan</a></li>
+                <li><a href="#uttarpradesh">UP / MP</a></li>
+                <li><a href="#westbangal-odisha">West Bengal / Odisha</a></li>
+            </ul>
+        </div>
+        <div id="detail-section">
+            <div id="heading">
+                <div id="vl"></div>
+                <h1>MUHURAT - EXCLUSIVE JEWELLERY</h1>
+                
+              </div>
+              <div id="paraText">
+                <p>Weddings are a deep-rooted element of our society, and Indian brides are known as symbols of beauty, pride and elegance. India is a vast country with different customs and traditions practiced even within the same state. Yet, there is something that unites us all - the "<b>Muhurat</b>" or the auspicious time for celebration. At <b>Kalyan Jewellers</b>, we embrace the importance of every "Muhurat". Our wedding collections are for every bride, from every part of India.</p>
+                <button id="btn-shop">
+                    <a href="https://www.candere.com/wedding.html?utm_source=KJOfficial&amp;utm_medium=KJWebsite&amp;utm_campaign=ShopOnlineOnPage&amp;utm_source=KJOfficial&amp;utm_medium=KJWebsite&amp;utm_campaign=ShopOnlineOnPage" target="_blank" >SHOP ONLINE</a>
+                </button>  
+            </div>
+        </div>
+        <div id="states-wise">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="gujarat">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/gujarat.jpg" alt="Best wedding jewellery designs of kalyan jewellers in gujarat" title="Gujarat"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Gujarat<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/gujarat.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6  col-12 mb-4" id="maharashtra">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/maharashtra.jpg" alt="Best wedding jewellery jewellery Maharashtra" title="Maharashtra"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Maharashtra<hr></h5>
+                        
+                        <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/maharashtra.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="andrapradesh-telangana">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/andrapradesh-telangana.jpg" alt="Best wedding jewellery designs in Andhrapradesh Telangana" title="Andhrapradesh Telangana"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Andhrapradesh<br>Telangana<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/andhrapradesh-telangana.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="karnataka">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/karnataka.jpg" alt="Best wedding jewellery designs at Karnataka" id="karnataka" title="Karnataka"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Karnataka<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/karnataka.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="tamilnadu">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/tamilnadu.jpg" alt="Best wedding jewellery designs in Tamil nadu" title="Tamil nadu"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Tamil nadu<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/tamilnadu.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="kerala">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/kerala.jpg" alt="Top wedding jewellery designs in Kerala" title="Kerala"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Kerala<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/kerala.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="punjab">
+                <figure class="active">
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/punjab.jpg" alt="top jewellery designs in kalyan jewellers punjas" title="Punjab"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Punjab<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/punjab-delhi.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="delhi">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/delhi.jpg" alt="Top wedding jewellers delhi" title="Delhi"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Delhi<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/punjab-delhi.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="rajasthan">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/rajasthan.jpg" alt="best wedding jewellery designs Rajasthan" title="Rajasthan"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Rajasthan<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/rajasthan.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="uttarpradesh">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/uttarpradesh.jpg" alt="Uttar pradesh" title="Uttar pradesh"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Uttar pradesh<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/up-mp.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="madhyapradesh">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/madhyapradesh.jpg" alt="Madhya pradesh" title="Madhya pradesh"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">Madhya pradesh<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/up-mp.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4" id="westbangal-odisha">
+                <figure>
+                <div><img src="https://www.kalyanjewellers.net/images/muhurat2/blocks/westbangal-odisha.jpg" alt="Best wedding jewellery designs in West Bengal / Odisha" title="West Bengal / Odisha"></div>
+                    <figcaption>
+                        <h5 class="text-uppercase">West Bengal<br> Odisha<hr></h5>
+                         <div class="oi-btns-hldr">
+                        <a href="https://www.kalyanjewellers.net/muhurat/wb-odisha.php" class="btn btn-lg btn-outline-white">Take a look</a>
+                         
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            
+        </div>
+        <div class="do-video-content-wrap">
+            <div class="do-preview-video" style="height: auto">
+                <a class="do-video-item" href="https://www.youtube.com/watch?v=VmcwdIP6VbM" rel="prettyPhoto[pp_vid]" title="">
+                    <img src="https://www.kalyanjewellers.net/images/muhurat2/main-video-thumb-1.jpg" width="100%" alt="Muhurat video"> <i class="icon ion-md-play"></img></i>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+
+
+    <div>
+        <div id="input-content">
+           <div id="flex-box"> <div id="input-box" style="font-weight: 300;">SUBSCRIBE THE KALYAN NEWSLETTER</div>
+            <input type="email" placeholder="Email address">
+           <div id="iconright"><i class="fa-solid fa-chevron-right" style="font-size: 13px;"></i></div> 
+        </div></div>
+    
+        <div id="footercontainer">
+            <div id="footer-left"  >
+                <div id="footer-left-top">
+                    <div>
+                        <select name="" id="selected" onclick="myFun()" >
+                            <option value="" >SELECT YOUR COUNTRY</option>
+                            <option value="">INDIA</option>
+                            <option value="">UAE</option>
+                            <option value="">QATAR</option>
+                            <option value="">OMAN</option>
+                            <option value="">KUWAIT</option>
+                        </select>
+                    </div>
+                    <div id="middle"><div id="iconcircle" ><i class="fa-solid fa-phone" style="font-size: 12px;color: red;"></i></div><p style="display: inline;">1800 - 4257333</p></div>
+                    <div><p >info@kalyanjewellers.net</p></div>
+                    <div class="navICON1" style="padding-left: 20px;">
+                        <i  class="fa-brands fa-facebook"></i>
+                        <i  class="fa-brands fa-twitter-square"></i>
+                        <i  class="fa-brands fa-youtube"></i>
+                        <i  class="fa-brands fa-instagram-square"></i>
+                        <i class="fa-brands fa-whatsapp-square" style="color:#25d366;"></i>
+                    </div>
+                </div>
+                <div id="footer-left-bottom">
+                    <div>
+                        <p>ABOUT US</p>
+                        <p>KALYAN NEWS</p>
+                        <p>CONTACT US</p>
+                        <p>STORE LOCATOR</p>
+                        <p>MEDIA</p>
+                        <p>THE KALYAN POMISE</p>
+                        <P>JEWELLERY WIKKI</P>
+                        <P>INVESTORS</P>
+                        
+                    </div>
+                    <div style="height: 135px; border-left: 1px solid #787e83 ;">
+                        <p>FAQ</p>
+                        <p>CAREER</p>
+                        <p>BE INFORMED</p>
+                        <p>EASY INSTALLMENT PLAN</p>
+                        <p>PARTNERING WITH TRUST</p>
+                        <P>GOLD RATE TODAY</P>
+                        <P>ONLINE PURCHASE</P>
+                    </div>
+                    <div  style="height: 100px; border-left: 1px solid #787e83 ;">
+                        <p>BLOG</p>
+                        <p>WHY BUY FROM US</p>
+                        <p>PRIVACY POLICY</p>
+                        <p>TERMS AND CONDITIONS</p>
+                        <p>SITEMAP</p>
+                        <P></P>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="footer-right">
+                <h4 style="color:#212529; font-family:sans-serif; font-weight: 300;margin-top: 0px;">FEEDBACK</h4>
+                <input type="text" placeholder="Full Name">
+                <input type="number" placeholder="Mobile No:">
+                <input type="email" placeholder="Email">
+                <select name="feedback" id="feedbackselect" style="color: #787e83; margin-left: -3px;" >
+                    <option value="" >Feedback type</option>
+                    <option value="">Store Related Complaints</option>
+                    <option value="">Product Related Complaints</option>
+                    <option value="">General Queries</option>
+                    <option value="">Other Enquires</option>
+                </select>
+                <button id="submit">SUBMIT</button>
+            </div>
+        </div>
+        <h6 style="text-align: center;color: #787e83;font-family: sans-serif;font-weight: 200;">Copyright © 2022 Kalyan Jewellers. All rights reserved</h6>
+    </div>
+</body>
+</html>
+
+<script>
+    var nums = document.querySelectorAll("#nav-ul > li >a");
+    for (var i = 0; i < nums.length; i++) {
+    nums[i].addEventListener("click", anchorFunc);
+    }
+    function anchorFunc(elem){
+        
+        var val = elem.path[0].hash
+        var box=document.querySelector(val)
+        box.style.boxShadow = "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"
+       
+    }
+  
+    document.querySelector("#submit")
+    selected.style.color="#212529"
+    selected.style.borderColor="blue"
+</script>

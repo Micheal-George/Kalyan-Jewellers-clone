@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2a05cd7cd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<style>
+     /* navbar TOP */
+    #topbox{
+        height: 43px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    /* topleft side content */
+    #topboxleft{
+       height: 43px;
+        width: 360px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+            /* topleft side innercontent */
+    
+    #topboxleftinner{
+        height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
+
+         /* topright side content */
+    
+    #topboxright{
+       height: 43px;
+        width: 270px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    
+     /* topright side inner content */
+    #topboxrightinner{
+       height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex; 
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer; 
+        gap: 5px;   
+    }
+
+    /* social media icons */
+    .navICON{
+        display: flex;
+       color:#e30613 ;
+        font-size: 14px;
+        justify-content: space-around;
+        gap: 10px;
+       margin-top: -7px;
+    }
+    i{
+      border-radius: 50px;
+        font-size: 24px;   
+    }
+   a{
+     text-decoration: none;
+     color: #777171;
+   }
+   /*Main navbar */
+   #topboxleftinner>div{cursor: pointer;}
+
+#topboxleftinner>div:hover{ color:red;}
+   /* ---------------------------START OF NAVBAR CHANGES CSS PART---------------------- */
+   nav ul{
+       padding: 0 -15px;
+       margin: 0;
+       float:initial;
+       margin-left: 70px;
+       margin-top: -40px;
+   }
+   nav ul li{
+       background: white;
+       position: relative;
+       list-style: none;
+       display: inline-flex;
+       margin-right: 2px;
+       margin-left: 5px ;
+        
+   }
+   .navmain{margin-left: 50px;}
+   .navlinemain{
+       background: white;
+   }
+   .navlinemain:hover{
+        cursor: pointer;
+        border-bottom: 1.5px solid #e30613;color: #e30613;   
+   }
+   nav ul li a{
+       display: block;
+       padding: 0 15px;
+       color: #777171;
+       text-decoration: none ;
+       line-height: 40px;
+       font-size: 15px;
+   }
+   nav>ul>li>ul>li>a{
+       color: black;
+       background-color: white;
+       font-size: medium;
+   }
+   nav>ul>li>ul>li>a:hover{
+       border: none;
+       color: lightgrey;
+   }
+   nav ul ul{
+        position: absolute;
+        top: 60px;
+        display: none;
+
+   }
+   nav ul li:hover > ul{
+       display: block;
+       transform: -webkit-transform translate(-50%, 0%);
+   }
+   nav>ul>li>ul>li{
+       width: auto;
+       margin-left: -95px; 
+   }
+   nav ul ul li{
+       width: 100px;
+       float: none;
+       display: list-item;
+       position: relative;
+   }
+   /* navbar center logo image */
+   #logo{
+       height: 150px;
+       width: 130px;
+       margin:-20px 20px -40px 20px 
+   }
+   #topboxleftinner>div{cursor: pointer;}
+
+   #topboxleftinner>div:hover{ color:#212529;}
+
+  .hov:hover{border-bottom: 1.5px solid #e30613;color: #e30613;}
+  
+  .col:hover{color:#212529;}
+
+    * {box-sizing:border-box}
+
+                                                            /* Slideshow container */
+.slideshow-container {
+    margin-top: 100px;
+  max-width: 100%;
+  
+  margin: 2% auto;
+  height: 601px;
+border-bottom: 2px solid red;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  border-radius: 50%;
+  border-color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+ background-color: black;
+ color: white;
+  border-radius: 50%;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+/* to adjust image size */
+.mySlides>img{
+    height: 600px;
+  width: 100%;
+}
+
+                                                        /* curve border */
+.curve
+{
+    height:42px ;
+    width: 8%;
+    margin-left: 46%;
+   transform:-webkit- translate(-50%,0%);
+   background-color:none ;
+   margin-top: -63.9px;
+}
+
+/* line */
+#Sline
+{
+    margin-top: 15px;
+    margin-left: 50%;
+    width: 1px;
+    height: 80px;
+    border-right: 1px solid #000;   
+}
+
+                                                        /* Muhurat */
+#Muhurat{
+    text-align: center; 
+}
+
+#Muhuratcontent{
+    height: 100px;
+    width: 850px;
+margin: auto;
+}
+
+#Muhuratcontent>p{  
+text-align: center;
+line-height: 28px;
+font-size: 18px;
+display: inline;
+color: rgb(170, 165, 165);
+}
+#pmuhurat{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+                                                /* youtube video box */
+#Youmain{
+    height: 430px;
+    width: 77.5%;
+    margin:4% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Yousub1{
+    height: 100%;
+    width: 750px;
+   
+}
+#Yousub2{
+    height: 100%;
+    width: 380px;
+    background-color:#e30613;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#biglogo{
+    height: 200px;
+    width: 240px;
+}
+
+/* brand family EAR RING IMAGE*/
+#brandfamilybox{
+    height: 305;
+    width: 77.5%;
+    margin: auto;
+    display: flex;
+}
+#betweenimagebox{
+    height: 305px;
+    width: 49%;
+    background-color:#e9e1df;
+    display: flex;
+    align-items: center;
+}
+                                                /* BRAND FAMILY H1 */
+#betweenimagebox>h1{
+    font-size: 65px;
+    text-align: center;
+    color: #a8a7aa;
+    font-weight: normal;
+}
+
+/* LINE */
+#bline{
+    margin-top: 0px;
+    margin-left: 50%;
+    width: 1px;
+    height: 80px;
+    border-right: 1px solid #000;  
+}
+
+#brandFamily{
+    text-align: center;
+    margin-top: 2px;
+    
+}
+#brandFamilycontent
+{height: 140px;
+    width: 820px;
+margin: auto;
+text-align: center;}
+
+#brandFamilycontent>p
+{text-align: center;
+line-height: 28px;
+font-size: 18px;
+display: inline;
+color: rgb(170, 165, 165);
+}
+
+
+#kalyans{
+    font-style: italic;
+}
+
+                                            /* <!-- brand slider --> */
+.slideshow-container1 {
+    width: 77.5%;
+  height: 200px;
+  position: relative;
+  margin: 3% auto;
+}
+/* image containing box */
+.mySlides1 {
+  display: none;
+  width: 100%;
+  padding: 0px 15px ;
+}
+/* next prev buttons */
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+ top: 30%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(170, 165, 165);
+  
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; 
+}
+.prev1{
+    margin-left: -10px;
+}
+/* Position the "next button" to the right */
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: -20px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover, .next1:hover {
+    color: black;
+}
+/* slider image */
+.img1{
+    height: 130px;
+    width: 200px;
+    margin-left: 17px;
+}
+
+                                                            /* about us */
+#about-us-mainbox{
+    width: 77.5%;
+    height: 470px;
+    margin: auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -50px;
+    border-bottom:1.5px solid red ;
+}
+#about-us-box{
+    width: 850px;
+    height: 100%;
+    padding: 0px 55px 40px 55px;
+    background-color: #f6f6f4;
+}                         
+                                       /* color box */
+#about-us-colorbox{
+    width: 270px;
+    height: 100%;
+    background-color:#e30613;  position: relative;  margin: auto;    
+display: grid; align-items: center;
+}
+
+.mySlidescolorbox { width: 100%;  margin-bottom: -100px; }
+
+.mySlidescolorbox>p{
+    color: white;font-size: 25px; text-align: center;font-family: sans-serif;font-stretch: ultra-expanded;
+}
+.mySlidescolorbox>h3{ color: white;font-size: 22px; text-align: center;font-size: 100px; margin: -10px 0px;
+font-weight: 500; font-stretch:condensed;}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+.active {
+  background-color: white;
+}
+
+#about-us-line{
+    margin-top: 0px;
+    margin-left: 10%;
+    width: 1px;
+    height: 80px;
+    border-right: 1px solid #000; 
+    margin-bottom: -20px; 
+ }
+/* about us h1 */ */
+#about-us-text{
+  margin-top: -10px;
+  font-size: 100px;
+}
+/* about us para */
+#about-us-text~p
+{text-align: left;
+line-height: 28px;
+font-size: 18px;
+color: rgb(170, 165, 165);
+}
+/* button view */
+.about-us-vbtn
+{
+font-size: 14px;
+padding: 6px 30px;
+cursor: pointer;
+}  
+.about-us-vbtn:hover
+{
+    background-color: black;
+    color: white;
+}
+.curveabout{
+  margin-top:   -34px;
+}
+
+                                                                /* chairmans message */
+#CmsgBox
+{
+    height: 100px;
+    width: 220px;
+    margin: auto;
+}
+#CmsgBox>h1
+{
+    text-align: center;
+    margin-top: -5px;
+    }
+#Cimg{
+    display: block;
+    width: 77.5%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+#cmsg{
+    width: 77.5%;
+    height: 130px;
+    margin: auto;
+    padding-bottom: 90px;
+}
+#cmsg>p,#cmsg>p+p,.directorsbox p{
+    line-height: 28px;
+font-size: 18px;
+color: rgb(170, 165, 165);
+text-align: center;
+margin: 0px 30px;
+}
+#cmsg>p+p{
+margin: 0px;
+}
+.cbtn{
+    margin: auto;
+    display: block;
+    background-color: white;
+    padding: 8px 20px;
+    border: 0.5px solid black;
+}
+.cbtn:hover{
+background-color: black;
+color: white;
+}
+
+                                    /* executive directors */
+#directors{
+    width: 77.5%;
+    height: 820px;
+    padding: 40px 0px 70px 0px;
+    margin: auto;
+    border-bottom: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.directorsbox{
+    height: 100%;
+    width: 49%;
+   padding: 40px 40px;
+   background-color: #f6f6f4;
+}
+#directors img{
+height: 300px;
+width: 490px;
+}
+.directorsbox>h4{
+    color: rgb(170, 165, 165);
+    font-size: 24px;
+    margin-top: 15px;
+}
+.directorsbox p{
+    margin: -10px px 0px 0px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.directorsbox>button{
+    margin-top: 20px;
+}
+.Dcurve{
+    height:42px ;
+    width: 8%;
+    margin-left: 32%;
+ transform:   -webkit-translate(-50%,0%);
+   background-color:none ;
+   margin-top: -34px;
+}
+
+                                            /* kalyan news */
+#main-news-box{
+    width: 77.5%;
+    height: 790px;
+    padding-top: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#kalyan-news{
+    width: 66%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #f6f6f4;
+    padding: 0px 25px;
+    
+}
+#blogs{
+    width: 31%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #f6f6f4;
+    padding: 0px 30px;
+}
+#Nline{
+    margin-top: 0px;
+    margin-left: 49%;
+    width: 1px;
+    height: 80px;
+    border-right: 1px solid #000;
+}
+#kalyan-news>h1{
+    margin-left: 235px;
+    margin-top: 0px;
+}
+#Bline{
+    margin-top: 0px;
+    margin-left: 50%;
+    width: 1px;
+    height: 80px;
+    border-right: 1px solid #000;
+}
+#blogs>h1{
+    text-align: center;
+    margin-top: 0px;
+}
+.innernews{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 470px;
+    width: 320px;
+    padding: 40px;
+    background-color: white;
+}
+#maininnernews{
+   margin-top: 60px;
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.txt{
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2e4649;
+    cursor: pointer;
+}
+.txt:hover,span,.news:hover{
+    color: red;
+    cursor: pointer;
+}
+.news{
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2e4649;
+    cursor: pointer;
+}
+.Nbtn{
+    margin:8% auto;
+    display: block;   
+}
+          /* blog part */
+#blog-details{
+  margin-top: 0pxpx;
+  width: 100%;
+  height: 50px;
+  
+}
+#blog-details>h3{
+  
+    font-family: 'PT Sans', sans-serif;
+    color:#e30613;
+    cursor: pointer;
+}
+.blog-details-para{
+  margin-top: -15px;
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid  #e30613;
+  border-top:  1px solid  #e30613;
+ padding: 10px 0px;
+  
+}
+.blog-details-para>p{
+  font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2e4649;
+    margin: 0px 5px 0px 0px;
+    line-height: 20px;
+}
+.blogbtn{
+  margin-top: 135px;
+}
+#blog-details>h3:hover{
+  color: #2e4649;
+ }
+                                                          /* media slider */ */
+* {box-sizing:border-box}
+
+.slideshow-container2 {  width: 75%;  position: relative;  margin: auto;  }
+
+
+.mySlides2 {  display: none; width: 100%; height: 160px;    }
+
+
+.prev2, .next2 {  cursor: pointer;  position: absolute;  top: 50%;  width: auto;  margin-top: -22px;  padding: 16px;  color: black;
+                  font-weight: bold;  font-size: 18px;  transition: 0.6s ease;  border-radius: 0 3px 3px 0;  user-select: none;}
+
+
+.next2 { right: 0;  border-radius: 3px 0 0 3px;  margin-right: 10px; }
+
+.prev2{ margin-left: 10px;}
+
+.prev2:hover, .next2:hover {  color: rgb(170, 165, 165);    }
+
+.img2:hover{background-color: black;opacity: 50%;}
+.img2{   height: 160px;   width: 220px;   margin-left: 25px;}
+
+.mbtn{ margin-top: 20px;}
+
+                          /* footer */
+
+       #input-content{ margin-top: -50px;   width: 102%;    height: 30px;    padding: 30px 0px 80px 0px ; margin-left: -5px;  background-color: #e6e7e2;   border-top: 3px solid #e30613 ;   }
+   
+   
+   #flex-box{    height: 30px;    width: 100%;    display: flex;    box-sizing: border-box;    justify-content: center;    gap: 5px;    }
+  
+  
+   #input-box{       border: 1px solid black;   height: 30px;;   padding: 8px 10px  5px 10px;   background-color: white;
+                     border: none;   color: #212529;   font-family: sans-serif;   font-size: 14px;    }
+  
+  
+   #input-box+input{    padding-left: 10px;     padding-top: 2px;    width: 280px;     border: none;    }
+  
+  
+   #iconright{    background-color: #e30613;     color: white;    width: 30px;   display: flex;
+                   justify-content: center;    align-items: center;  cursor: pointer; }
+  
+                   #iconright:hover{color:#212529; ;}
+   #footercontainer{       width: 100%;    height: 320px;       padding-top: 25px;    display: flex;
+                           justify-content: center;    gap: 30px;   }
+
+
+   #footer-left{     width: 820px;     height: 250px;      }
+  
+  
+   #footer-right{     width: 350px;    height: 270px;     box-sizing: border-box;    }
+  
+ 
+    #footer-right>input,#footer-right>select{    display: block;    width: 100%;    padding: 15px 0px 5px 15px;    border: none;
+                                                   border-bottom: 2px solid  #e6e7e2;;     font-size: 17px;   }
+  
+
+   #submit{     display: block;     margin-left: 82%;   margin-top: 20px;   padding: 5px 10px;  border: 1px solid #e30613 ;
+                   color: #e30613;     background-color: white;    cursor: pointer;     }
+
+
+   #footer-right>select{    color:#212529;      font-family:sans-serif;    font-weight: 300;
+                       width:105%;     padding-bottom: 0px;        cursor: pointer;        }
+
+
+ #footer-right>input:hover,#footer-right>select:hover {      outline:none!important;     }
+
+
+   #submit:hover{   color: white;   background-color: #e30613;     }
+
+   
+   #footer-left-top{    width: 100%;     height: 50px;   margin-top: 20px;    display: flex;      background-color: white;   }
+ 
+ 
+   #footer-left-top>div{       width: 25%;     height: 100%;}
+
+   #footer-left-top select{    width: 170PX;       height: 31px;     font-size: 10px;    font-weight: 300;
+                           font-family: sans-serif;             padding: 8px 10px;     color: #e30613;     border-color: #e30613;}
+
+   #footer-left-top p{    font-size: 13px;    font-family: sans-serif;    color: #e30613;    cursor: pointer;   }
+
+   .navICON1{     display: flex;    color: red;     font-size: 22px;     gap: 7px;
+       
+    }
+    .navICON1>i{ cursor: pointer;}
+    .navICON1>i:hover{color:  #212529;}
+    #footer-left-bottom{   display: flex;  }  
+ 
+    #footer-left-bottom>div{width: 31%;height: 180px;margin-top: 25px;}
+
+  #footer-left-bottom p{ font-size: 11px;font-family: sans-serif;line-height: 7px;margin-left: 15px; color: #212529;cursor: pointer;}
+  
+  #footer-left-bottom P:hover,#footer-left-top p:hover{ color: #c4c5c1;}
+
+#middle{display: flex;cursor: pointer;}
+
+ #iconcircle{height: 25px;     margin: 5px 10px;     width: 25px;     border: 1px solid #e30613;  display:flex ;  justify-content: center;
+                             align-items: center;     border-radius: 50%;      }
+</style>
+<body>
+      <!-- navbar TOP-->
+    <div id="topbox">
+        <div id="topboxleft">
+            <div id="topboxleftinner">
+                 <div>MY KALYAN /</div>
+                 <div>MEDIA /</div>
+                 <div>KALYAN NEWS /</div>
+                 <div>GOLD RATES /</div>
+                 <div>DIGITAL GOLD</div>
+            </div>
+        </div>
+     
+       <div></div>
+       <div id="topboxright">
+        <div id="topboxrightinner">
+           <div class="col">FEEDBACK /</div>
+           <div class="col">CONTACT /</div>
+           <div class="navICON">
+              <div><i  class= "fa-brands fa-facebook col"></i></div> 
+              <div><i  class="fa-brands fa-twitter-square col"></i></div> 
+              <div> <i  class="fa-brands fa-youtube col"></i></div>
+               <div><i  class="fa-brands fa-instagram-square col"></i></div>
+           </div>
+        </div> 
+    </div>
+   </div>
+
+  <!-- navbar -->
+  <div class="navmain">
+    <nav style="font-family: 'PT Sans', sans-serif;"  >
+        <ul>
+            <li><a href="ourbrandsAnokhi.html" class="navlinemain">OUR BRANDS</a>
+                    
+                <ul>
+                    <!-- <div style="width: 300%; margin-left: -95px;"><h5 style="text-decoration: underline;">BRANDS FAMILY</h5></div> -->
+                    <li><a href="ourbrandsMudra.html" style="margin-top: 22px;">MUDHRA</a></li>
+                    <li><a href="ourbrandsNimah.html">NIMAH</a></li>
+                    <li><a href="ourbrandsAnokhi.html">ANOKHI</a></li>
+                    <li><a href="ourbrandsRang.html">RANG</a></li>
+                    <li><a href="">TEJASVI</a></li>
+                    <li><a href="">ZIAH</a></li>
+                </ul> 
+            </li>
+            <li><a href="MUHURAT.html" class="navlinemain">MUHURAT</a>
+                <ul>
+                  <li><a href="muhuratGujrat.html" style="margin-top: 22px;">GUJRAT</a></li>
+                  <li><a href="muhuratMah.html">MAHARASHTRA</a></li>
+                  <li><a href="muhuratPunjab.html">PUNJAB </a></li>
+                  <li><a href="muhuratRajasthan.html">RAJASTHAN</a></li>
+                  <li><a href="">UP </a></li>
+                </ul> 
+            </li>
+            <li><a href="shopOnline.html" target="_blank" class="navlinemain">SHOP ONLINE</a>
+
+            </li>
+            <li><a href="jewellery.html" class="navlinemain">JEWELLERY</a>
+                <ul>
+                    <li><a href="" style="margin-top: 22px;" >CHAINS</a></li>
+                    <li><a href="">RINGS</a></li>
+                    <li><a href="">NECKLACES</a></li>
+                    <li><a href="">EARINGS</a></li>
+                    <li><a href="">BRACELETS</a></li>
+                    <li><a href="">BANGLES</a></li>
+                </ul> 
+            </li>
+           <a href="index.html"><img id="logo"  src="https://www.kalyanjewellers.net/images/kalyan_logo.svg" alt="kalyan_logo"></a> 
+            <li><a href="aboutUs.html" class="navlinemain">ABOUT US</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+                
+            </li>
+            <li><a href="MUHURAT.html" class="navlinemain">GIFT CARD</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+            <li><a href="AMBASSADORS.html" class="navlinemain">AMBASSADOR</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+            <li><a href="storeLocator.html" class="navlinemain">STORE LOCATOR</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+        </ul>
+    </nav>
+</div>
+       
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="https://www.kalyanjewellers.net/images/banners/scam-2.jpg" style="width:100% ">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="https://www.kalyanjewellers.net/images/banners/candere-2.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="https://www.kalyanjewellers.net/images/banners/aadya-1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+                <img src="https://www.kalyanjewellers.net/images/banners/bms-3.jpg" style="width:100%">
+              </div>
+        
+              <div class="mySlides fade">
+                <img src="https://www.kalyanjewellers.net/images/banners/dg-4.jpg" style="width:100%">
+              </div>
+        
+              <div class="mySlides fade">
+                <img src="https://www.kalyanjewellers.net/images/banners/kjgift.jpg" style="width:100%">
+              </div>
+        
+              <div class="mySlides fade">
+                <img src="https://www.kalyanjewellers.net/images/banners/home_banner_7.jpg" style="width:100%">
+              </div>
+        
+              <div class="mySlides fade">
+                <img src="https://www.kalyanjewellers.net/images/banners/scam.jpg" style="width:100%">
+              </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlide(1)">&#10095;</a>
+          </div>
+
+          <!-- curve border -->
+         <div class="curve"><img  src="https://www.kalyanjewellers.net/images/devider.svg" alt=""></div>
+          
+         <!-- line -->
+         <div id="Sline"></div>
+
+         <!-- MUHURAT -->
+            <h1 id="Muhurat">MUHURAT</h1>
+            <div id="Muhuratcontent"><p> Weddings  are  a  deep-rooted  element  of our society, and Indian brides are known as symbols of beauty, pride and elegance. India is a vast country with different customs and traditions practiced even within the same state. Yet, there is something that unites us all - the </p>
+               <p id="pmuhurat">"Muhurat"</p> <p>or the auspicious time for celebration. At Kalyan Jewellers, we embrace the importance of every "Muhurat". Our wedding collections are for every bride, from every part of India.</p> </div>
+
+               <!-- youtube box -->
+                <div id="Youmain">
+                    <div id="Yousub1" ><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/kkIkD8bsT9c" title="KALYAN JEWELLERS - Muhurat Floor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>
+                    <div id="Yousub2">
+                            <img id="biglogo"  src="https://www.kalyanjewellers.net/images/kalyan_logo_white.svg" alt="kalyan_logo">
+                    </div>
+                </div>
+
+                <!-- brand family -->
+                <div id="brandfamilybox">
+                    <img src="https://www.kalyanjewellers.net/images/hm-gift-img-1.jpg" style="width: 300px;" alt="brand family">
+                    <div id="betweenimagebox"><h1>WE MAKE YOU FEEL SPECIAL</h1></div>
+                    <img src="https://www.kalyanjewellers.net/images/hm-gift-img-2.jpg" style="width: 300px;"  alt="brand family">
+                </div>
+
+                <!-- line -->
+                <div id="bline"></div>
+                
+                <!-- tag -->
+                <h1 id="brandFamily">BRANDS  FAMILY</h1>
+                <div id="brandFamilycontent"><p class="bP">India’s beauty lies in its diversity. Every part of India has its unique jewellery, the expertise to create those exist only in that region, passed on through generations. </p>
+                <p id="kalyans">Kalyan’s </p><p class="bP">biggest strength is in these craftsmen who create unique designs just for us from every nook and corner of India. And this range of jewellery, with those subtle nuances and the perfect finish which you won’t find anywhere else is what we bring you through our various brands.</p>
+                </div>
+
+                    <!-- brand slider -->
+                    <div class="slideshow-container1">          
+                        <div class="mySlides1 fade"> 
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/laya.svg" alt="2">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/glo.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/hera.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/candere.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/mudhra.svg">
+                        </div>
+
+                        <div class="mySlides1 fade"> 
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/glo.svg"alt="3" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/hera.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/candere.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/mudhra.svg">
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/nimah.svg" >
+                        </div>
+
+                        <div class="mySlides1 fade"> 
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/hera.svg" alt="4">
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/candere.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/mudhra.svg">
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/nimah.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/anokhi.svg" >
+                        </div>
+
+                        <div class="mySlides1 fade">
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/candere.svg" alt="5">
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/mudhra.svg">
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/nimah.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/anokhi.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/rang.svg" >
+                        </div>
+                        
+                        <div class="mySlides1 fade ">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/mudhra.svg" alt="6">
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/nimah.svg" >
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/anokhi.svg" >
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/rang.svg" >
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/vedha.svg" >
+                        </div>
+                        
+                        <div class="mySlides1 fade">  
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/nimah.svg" alt="7">
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/anokhi.svg" >
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/rang.svg" >
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/vedha.svg" >
+                          <img class="img1" src="https://www.kalyanjewellers.net/images/brands/ziah.svg" >
+                        </div>
+            
+                        <div class="mySlides1 fade">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/anokhi.svg" alt="8">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/rang.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/vedha.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/ziah.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/laya.svg" >
+                          </div>
+            
+                          <div class="mySlides1 fade">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/anokhi.svg" alt="8">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/rang.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/vedha.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/ziah.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/laya.svg" >
+                          </div>
+            
+                          <div class="mySlides1 fade">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/rang.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/vedha.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/ziah.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/laya.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/glo.svg" >
+                          </div>
+            
+                          <div class="mySlides1 fade">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/vedha.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/ziah.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/laya.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/glo.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/hera.svg" >
+                          </div>
+            
+                        <div class="mySlides1 fade">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/ziah.svg" alt="1">
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/laya.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/glo.svg" >
+                            <img class="img1" src="https://www.kalyanjewellers.net/images/brands/hera.svg" >
+                              <img class="img1" src="https://www.kalyanjewellers.net/images/brands/candere.svg" >
+                            </div>
+                
+                                        <!-- Next and previous buttons -->
+        <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+      </div>
+
+                                            <!-- about us -->
+      <div id="about-us-mainbox">
+          <div id="about-us-box">
+              <div id="about-us-line"></div>
+              <h1 id="about-us-text">ABOUT US</h1>
+              <p>We are one of the oldest business families in India with a family legacy of 112 years in business. Started for the noble cause of nation-building and self-sustenance in a pre-independent India, the forefathers believed ethical, honest and transparent business practices should form the foundation of the group.</p>
+                <p>Having ventured into jewellery retailing in 1993 in Thrissur, Kerala, India, where we are headquartered, and as on June 30, 2020, we have 137 showrooms spread across India and GCC</p>
+                <button class="about-us-vbtn">VIEW MORE</button>
+            </div>
+          <div id="about-us-colorbox">
+            <div class="mySlidescolorbox"> 
+              <p>MORE THAN</p>
+              <h3 >10</h3>
+              <p>BRANDS</p>
+          </div>
+         
+          <div class="mySlidescolorbox"> 
+              <p>MORE THAN</p>
+              <h3 >140</h3>
+              <p>STORES</p>
+          </div>
+
+          <div class="mySlidescolorbox"> 
+              <p>OVER</p>
+              <h3 >100</h3>
+              <p>YEARS IN TRADE</p>
+          </div>
+          <div style="text-align:center ;margin-top: -50px; ">
+            <span class="dot" ></span>
+            <span class="dot" ></span>
+            <span class="dot" ></span>
+          </div>
+          </div>
+        </div>
+        <div class="curveabout curve"><img  src="https://www.kalyanjewellers.net/images/devider.svg" alt=""></div>
+           
+                                         <!-- chairmans message -->
+                  <div id="Sline"></div>
+                    <div id="CmsgBox"><h1>CHAIRMAN'S MESSAGE</h1></div> 
+                    <div id="cmsg"><p>Today, when I look around me, business is all about toplines, bottomlines and market capitalisation. But Kalyan entered into business in a pre-independent India to build a better India, as our forefathers believed ethical, fair business will make India self-sufficient and strong.</p>
+                    <p>Personally, I believe Kalyan Jewellers' major achievement is the trust we have earned from millions of people across the length and breadth of a huge subcontinent like India, and abroad in the GCC.</p></div>
+                    <button class="about-us-vbtn cbtn">VIEW MORE</button>
+                    <img id="Cimg" src="https://www.kalyanjewellers.net/images/chairman-wide.jpg" alt="">
+                   
+                   
+                    <div id="directors">
+                        <div class="directorsbox">
+                            <img src="https://www.kalyanjewellers.net/images/rajesh-kalyan.jpg" alt="">
+                            <h4>Rajesh Kalyanaraman - Executive Director</h4>
+                            <p>I feel our biggest differentiator is not only the ability to understand local, think local and act local, but at the same time bring in our vast experience and sourcing strength out of operating in multiple markets. Jewellery is a complicated product, because tastes vary even within the same state. What helps us here is the huge variety of products we stock from artisans across the country and even the Arab countries.</p>
+                            <button class="about-us-vbtn ">VIEW MORE</button>
+                        </div>
+                        <div class="directorsbox">
+                            <img src="https://www.kalyanjewellers.net/images/ramesh-kalyan.jpg" alt="">
+                            <h4>Ramesh Kalyanaraman - Executive Director</h4>
+                            <p>We have always visualized everything on a large scale. We always enjoyed making the road and never thought of following a trail. Massive marketing campaigns and launches, path-breaking ads which were never-before seen in jewellery advertising, multi-storey large format jewellery showrooms, same-day multi-launch ceremonies and events.</p>
+                            <button class="about-us-vbtn" >VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="Dcurve"><img  src="https://www.kalyanjewellers.net/images/devider.svg" alt=""></div>
+
+                        <!-- kalyan news -->
+                        <div id="main-news-box">
+                            <div id="kalyan-news">
+                                <div id="Nline" ></div>
+                                <h1>KALYAN NEWS</h1>
+                                <div id="maininnernews">
+                                <div class="innernews">
+                                    <img style="width: 100%;cursor: pointer;" src="https://www.kalyanjewellers.net/images/news/kalyan-jewellers-announces-wedding-season-offering-with-muhurat-2-0-s.jpg" alt="">
+                                  <p class="txt">Kalyan Jewellers announces wedding season offering with Muhurat 2.0</p>
+                                  <p class="news"> <b>Thrissur, April 17, 2021:</b> In a bid to celebrate the diverse cultures and changing preferences of millennial brides-to-be, Kalyan Jewellers has revamped its wedding jewellery collection....... <span>read more</span> </p>
+                                </div>
+                                <div class="innernews">
+                                    <img style="width: 100%;cursor: pointer;" src="https://www.kalyanjewellers.net/images/news/kalyan-jewellers-announces-first-phase-of-network-expansion-post-ipo-s.jpg" alt="">
+                               <p class="txt">Kalyan Jewellers announces first phase of network expansion post IPO</p>
+                               <p class="news"> <b>Thrissur, March 30, 2021: </b>  Kalyan Jewellers, one of India’s largest jewellery companies, has today announced that the brand is planning to increase its retail footprint by 13% in the first quarter itself.<span>read more</span> </p>
+
+                                </div>
+                             
+                            </div>
+                            <button class="about-us-vbtn Nbtn">VIEW MORE</button>
+                            </div>
+                                                  <!-- blogs -->
+                            <div id="blogs">
+                                <div id="Bline" ></div>
+                                <h1>BLOGS</h1>
+                               <div id="blog-details">
+                                <h3>The “Nosy” Affair - Tips to choose the perfect Nose Pin</h3> 
+                                <div class="blog-details-para">
+                                  <p>Classic, traditional and always in style, the Nose Pin has been a favourite of the Indian woman for generations. The affair with the nose pin starts the moment you decide to pierce. From there begins endless searches for that perfect nose pin that sits perfectly on your face. And it is as plain as day to state that one can't own too many nose pins! <span>read more</span> </p></div>
+                               <h3 style="margin-top: 15px;">Add Rang to Your Holi!</h3>
+                               <div class="blog-details-para" style="height: 145px;">
+                                 <p>What's a celebration without a bit of bling! As the festival of Holi draws near, it's time to dress up, accessorise and indulge in the colours of the season. Here's a guide to the top six jewellery trends of this festive season. <span>read more</span> </p>
+                               <button class="about-us-vbtn blogbtn Nbtn">VIEW MORE</button>
+                                </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <!-- media -->
+                        <div id="Sline"></div>
+                        <h1 id="brandFamily">MEDIA</h1>
+
+
+              
+                        <!-- media slider -->
+       <div class="slideshow-container2">
+            <div class="mySlides2"> 
+              <a href="https://www.youtube.com/watch?v=ogxvM_SlKt4"><img class="img2" style="margin-left: 80px;" src="https://img.youtube.com/vi/ogxvM_SlKt4/0.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=VmcwdIP6VbM"><img class="img2" src="https://img.youtube.com/vi/VmcwdIP6VbM/0.jpg" alt=""></a>  
+              <a href="https://www.youtube.com/watch?v=NLvoiWlPkU8"><img class="img2"  src="https://img.youtube.com/vi/NLvoiWlPkU8/0.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=ZtnyjPnWYyc"><img class="img2" src="https://img.youtube.com/vi/ZtnyjPnWYyc/0.jpg" alt=""></a>
+            </div>
+
+            <div class="mySlides2 "> 
+              <a href="https://www.youtube.com/watch?v=NLvoiWlPkU8"><img class="img2" style="margin-left: 80px;" src="https://img.youtube.com/vi/NLvoiWlPkU8/0.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=ZtnyjPnWYyc"><img class="img2" src="https://img.youtube.com/vi/ZtnyjPnWYyc/0.jpg" alt=""></a>
+             <a href="https://www.youtube.com/watch?v=35YW9m3mRQY"><img src="https://img.youtube.com/vi/35YW9m3mRQY/0.jpg" class="img2" alt=""></a>
+             <a href="https://www.youtube.com/watch?v=cKqO50YgrbQ"><img src="https://img.youtube.com/vi/cKqO50YgrbQ/0.jpg" class="img2" alt=""></a>
+            </div>
+
+            <div class="mySlides2 "> 
+              <a href="https://www.youtube.com/watch?v=-dJG409wmWg"><img class="img2" style="margin-left: 80px;" src="https://img.youtube.com/vi/-dJG409wmWg/0.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=yYkOKHSoDMA"><img class="img2" src="https://img.youtube.com/vi/yYkOKHSoDMA/0.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=AelVDQOpOwQ"><img class="img2" src="https://img.youtube.com/vi/AelVDQOpOwQ/0.jpg" alt=""></a>
+              <a href="https://www.youtube.com/watch?v=J8JLsqPka2Y"><img class="img2" src="https://img.youtube.com/vi/J8JLsqPka2Y/0.jpg" alt=""></a>
+               
+            </div>
+            <a class="prev2" onclick="showSlides2(-1)">&#10094;</a>
+            <a class="next2" onclick="showSlides2(1)">&#10095;</a>
+      </div>
+      <button class="about-us-vbtn cbtn mbtn Nbtn">VIEW MORE</button>
+
+                                  <!-- footer -->
+                                  <div>
+    <div id="input-content">
+       <div id="flex-box"> <div id="input-box" style="font-weight: 300;">SUBSCRIBE THE KALYAN NEWSLETTER</div>
+        <input type="email" placeholder="Email address">
+       <div id="iconright"><i class="fa-solid fa-chevron-right" style="font-size: 13px;"></i></div> 
+    </div></div>
+
+    <div id="footercontainer">
+        <div id="footer-left"  >
+            <div id="footer-left-top">
+                <div>
+                    <select name="" id="selected" onclick="myFun()" >
+                        <option value="" >SELECT YOUR COUNTRY</option>
+                        <option value="">INDIA</option>
+                        <option value="">UAE</option>
+                        <option value="">QATAR</option>
+                        <option value="">OMAN</option>
+                        <option value="">KUWAIT</option>
+                    </select>
+                </div>
+                <div id="middle"><div id="iconcircle" ><i class="fa-solid fa-phone" style="font-size: 12px;color: red;"></i></div><p style="display: inline;">1800 - 4257333</p></div>
+                <div><p >info@kalyanjewellers.net</p></div>
+                <div class="navICON1" style="padding-left: 20px;">
+                    <i  class="fa-brands fa-facebook"></i>
+                    <i  class="fa-brands fa-twitter-square"></i>
+                    <i  class="fa-brands fa-youtube"></i>
+                    <i  class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-whatsapp-square" style="color:#25d366;"></i>
+                </div>
+            </div>
+            <div id="footer-left-bottom">
+                <div>
+                    <p>ABOUT US</p>
+                    <p>KALYAN NEWS</p>
+                    <p>CONTACT US</p>
+                    <p>STORE LOCATOR</p>
+                    <p>MEDIA</p>
+                    <p>THE KALYAN POMISE</p>
+                    <P>JEWELLERY WIKKI</P>
+                    <P>INVESTORS</P>
+                    
+                </div>
+                <div style="height: 135px; border-left: 1px solid #787e83 ;">
+                    <p>FAQ</p>
+                    <p>CAREER</p>
+                    <p>BE INFORMED</p>
+                    <p>EASY INSTALLMENT PLAN</p>
+                    <p>PARTNERING WITH TRUST</p>
+                    <P>GOLD RATE TODAY</P>
+                    <P>ONLINE PURCHASE</P>
+                </div>
+                <div  style="height: 100px; border-left: 1px solid #787e83 ;">
+                    <p>BLOG</p>
+                    <p>WHY BUY FROM US</p>
+                    <p>PRIVACY POLICY</p>
+                    <p>TERMS AND CONDITIONS</p>
+                    <p>SITEMAP</p>
+                    <P></P>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer-right">
+            <h4 style="color:#212529; font-family:sans-serif; font-weight: 300;margin-top: 0px;">FEEDBACK</h4>
+            <input type="text" placeholder="Full Name">
+            <input type="number" placeholder="Mobile No:">
+            <input type="email" placeholder="Email">
+            <select name="feedback" id="feedbackselect" style="color: #787e83; margin-left: -3px;" >
+                <option value="" >Feedback type</option>
+                <option value="">Store Related Complaints</option>
+                <option value="">Product Related Complaints</option>
+                <option value="">General Queries</option>
+                <option value="">Other Enquires</option>
+            </select>
+            <button id="submit">SUBMIT</button>
+        </div>
+    </div>
+    <h6 style="text-align: center;color: #787e83;font-family: sans-serif;font-weight: 200;">Copyright © 2022 Kalyan Jewellers. All rights reserved</h6>
+</div>
+
+    </body>
+
+                                               
+</html>
+
+<script>
+  // first slider
+  
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlide(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        
+        slides[slideIndex-1].style.display = "block"; 
+        }
+
+// brand slider
+        let slideIndex1 = 0;
+    showSlides1(slideIndex1);
+    
+    function plusSlides1(n) {
+      showSlides1(slideIndex1 += n);
+    }
+    
+    function currentSlide1(n) {
+      showSlides1(slideIndex1 = n);
+    }
+   
+    function showSlides1(n) {
+        
+      let i;
+      let slides1 = document.getElementsByClassName("mySlides1");
+      if (n > slides1.length)
+
+       {slideIndex1 = 1}
+      if (n < 1)
+       {slideIndex1 = slides1.length}
+
+      for (i = 0; i < slides1.length; i++) 
+      {
+        slides1[i].style.display = "none";
+        
+      }
+      
+      slides1[slideIndex1-1].style.display = "block";
+    }
+    let slideIndexB = 0;
+showSlidesBrand();
+
+function showSlidesBrand() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndexB++;
+  if (slideIndexB > slides.length) {slideIndexB = 1}
+  slides[slideIndexB-1].style.display = "block";
+  setTimeout(showSlidesBrand, 3500); // Change image every 2 seconds
+}
+var slideIndexC=0
+showSlidesC();
+
+function showSlidesC() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndexC++;
+  if (slideIndexC > slides.length) {slideIndexC = 1}
+  slides[slideIndexC-1].style.display = "block";
+  setTimeout(showSlidesC, 5500); // Change image every 2 seconds
+}
+
+
+
+//  youtue media slider
+let slideIndex2 = 0;
+    showSlides2(slideIndex2);
+    function plusSlides(n) {
+      showSlides2(slideIndex2 += n);
+    }
+    
+    function currentSlide1(n) {
+      showSlides2(slideIndex2 = n);
+    }
+   
+    function showSlides2(n) { 
+      let i;
+      let slides1 = document.getElementsByClassName("mySlides2");
+      if (n > slides1.length) {slideIndex2 = 1}
+      if (n < 1)  {slideIndex2 = slides1.length}
+
+      for (i = 0; i < slides1.length; i++) 
+      {   slides1[i].style.display = "none"; }
+      
+      slides1[slideIndex2-1].style.display = "block";  
+    }
+    let slideIndexmedia = 0;
+showSlidesMedia();
+
+function showSlidesMedia() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndexmedia++;
+  if (slideIndexmedia > slides.length) {slideIndexmedia = 1}
+  slides[slideIndexmedia-1].style.display = "block";
+  setTimeout(showSlidesMedia, 5000); // Change image every 2 seconds
+}
+                                         
+// color box slider
+
+let slideIndexmed = 0;
+    showSlidescolorMedia();
+    
+    function  showSlidescolorMedia() {
+      let i;
+      let slides = document.getElementsByClassName("mySlidescolorbox");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndexmed++;
+      if (slideIndexmed > slides.length) {slideIndexmed = 1}
+      for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+      slides[slideIndexmed-1].style.display = "block";
+      dots[slideIndexmed-1].className += " active";
+      setTimeout( showSlidescolorMedia, 4000); // Change image every 2 seconds
+    }
+
+    function myFun()
+ {
+     var selected=document.querySelector("#selected")
+     selected.style.color="#212529"
+     selected.style.borderColor="blue"
+ }
+</script>

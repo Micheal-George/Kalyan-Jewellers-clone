@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style >
+        #cointaner{
+            height: 44em;
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #payment-top{
+            width: 62%;
+            /* border: 1px solid pink; */
+        }
+        #details{
+            width: 30%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            height: 70%;
+            margin-right: 5%;
+        }
+        h1{
+            text-align: center;
+            border: 1px solid #2fbccc;
+            background-color: #8de3ec;
+            font-size: 30px;
+        }
+        #payment-top{
+            display: flex;
+            flex-direction: column;
+            height: 85%;
+            /* border: 1px solid red; */width: 70%;
+        }
+        #payment-inner{
+            /* border: 1px solid rgb(97, 86, 86);  */
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            height: 80%;
+            width: 90%;
+        }
+        #payment-options{
+            height: 80%;
+            width: 40%;
+            /* border: 1px solid rgb(3, 238, 255); */
+        }
+        #payment-options > div{
+            height: 40px;
+            width: 100%;
+            background-color: #edf8fa;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 2px;
+        }
+        #payment-options > div:hover{
+            height: 38px;
+            width: 99%;
+            background-color: #d3eaee;
+        }
+        #payment-details-outer{
+            height: 95%;
+            width: 58%;
+            /* border: 1px solid rgb(255, 0, 0); */
+        }
+        #inputtwo{
+            width:20%
+        }
+        #inputthree{
+            width:20%
+        }
+        #payment-details-heading > p{
+            color: #FF8C40;
+        }
+        #payment-details{
+            /* border: 3px solid #FF8C40; */
+            height: 100%;
+        }
+        #form1{
+            border: 1px solid rgb(3, 238, 255);
+            border-radius: 15px;
+            height: 61%;
+            width: 60%;
+            padding: 40px;
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+        #form1 >input{
+            margin-bottom: 12px ;
+
+            margin-top: 4px;
+            font-size: 18px;
+        }
+        #form1 > #submit{
+            background-color: #2fbccc;
+            height: 50px;
+            width: 150px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 16px 62px;
+            color: white;
+        }
+        #form1 > #submit:hover{
+            background-color: #41c7d6;
+            height: 55px;
+            width: 160px;
+            font-size: 25px;
+        }
+        #form1 > #para2{
+            color:gray;
+            font-size: 15px;
+        }
+        #h4{
+            margin: 0px;
+        }
+        
+                                  /* Footer */
+                                  #footer{
+            width: 100%;
+            background-color: #7C7993;
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #footer_1
+        {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            margin-left: 50px;
+            margin-right: 0;
+        }
+        #footer p{
+            color: white;
+            margin: 0%;
+        }
+                       /* header */
+        #topimg{
+            display: flex;
+            justify-content: center;
+            height: 40px;  
+        }
+        hr{
+            border: .15px solid grey;
+        }
+        main{
+            height: 450px;
+        }
+        #total{
+            border: 1px solid #2fbccc;
+            background-color: #8de3ec;
+            font-size: 30px;
+            text-align: center;
+        }
+        #item-heading{
+            text-align: center;
+        }
+        #main{
+    
+    display: grid;
+    grid-template-columns: repeat(1,420px);
+    grid-template-rows: repeat(10,100px);
+    box-sizing: border-box;
+   
+    
+}
+img{ height: 80px ; width: 100px;}
+
+#box
+{
+    display: flex;
+    border-top: 1px dotted #071f3e;
+    border-bottom: 1px dotted #071f3e;
+    padding: 10px 0px 10px 10px;
+}
+
+#box2{
+   margin-left: 240px;
+   width: 80px;
+   height: 50px;
+}
+#payboxmain{width: 100%;height: 85%; }
+#paymentdiv{width: 420px;height: 500px;  background-color:#edf8fa ; margin-top: 20px;}
+#totalamt{display: flex;justify-content: center;border-top: 1px dotted #071f3e; width: 100%;}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="topimg"><img src="https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/candere_logo/Candere_logo.svg?v=15653406421114" alt=""></div>
+        <div> <img src="https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/offer_banner/bank_discount_cart.jpg?v=1648299401" style="height: 70px;width: 100%; margin: 10px 0px 20px;"></div>
+    </header>
+    <div id="finalpayment">
+   <div id="cointaner">
+       <div id="payment-top">
+           <h1>SELECT A PAYMENT OPTION</h1>
+           <div id="payment-inner">
+               <div id="payment-options">
+                   <div id="div1"> Credit/Debit Card</div>
+                   <div id="div2">Netbanking</div>
+                   <div id="div3">DGRP</div>
+                   <div id="div4">Schemes</div>
+                   <div id="div5">UPI</div>
+                   <div id="div6">Others</div>
+               </div>
+               <div id="payment-details-outer">
+                    <div id="payment-details-heading"></div>
+                    <div id="payment-details"></div>
+               </div>
+           </div>
+       </div>
+       
+       <div id="paymentdiv">
+       <div id="payboxmain"><div id="main"></div> </div> 
+       <div id="totalamt"></div>
+    </div>
+      
+   </div>     
+   </div>
+<footer>
+    <div id="footer">
+        <div id="footer_1">
+            <img src="https://www.globalsign.com/images/globalsign-main.svg" style="height: 60px; width: 100px;">
+            <hr>
+        </div>
+        <div id="footer_text">
+            <p>© 2022 CANDERE.COM . ALL RIGHTS RESERVED. SITE MAP</p>
+        </div>
+        <div>
+            <p>WE ACCEPT</p>
+        </div>
+        <div>
+            <img src="https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/2016-02-09_142525.png?v=1495845651" style="width: 80%;" alt="">
+           
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+
+</footer>
+</body>
+</html>
+<script>
+    document.querySelector("#div1").addEventListener("click",func1)
+    function func1(){
+        console.log("working")
+       var  heading = document.createElement("h4");
+       heading.id="h4"
+       heading.innerText="ENTER CREDIT / DEBIT CARD DETAILS"
+       
+       var  para = document.createElement("p");
+       para.innerText="Get10'%'Bank Discount ofRs. 1749 by using any bank card."
+       
+       var form1 = document.createElement("form")
+       form1.id="form1"
+       console.log(form1)
+       var label1 =document.createElement("lable")
+       label1.for="inputone"
+       label1.innerText="Card Number"
+       var input1 = document.createElement("input")
+       input1.id="inputone"
+       input1.placeholder="Enter Card Number"
+       input1.type="number"
+      
+       var br1 = document.createElement("br")
+       var br2= document.createElement("br")
+       var br3= document.createElement("br")
+       var br4= document.createElement("br")
+       var br5= document.createElement("br")
+       var br6= document.createElement("br")
+       var br7= document.createElement("br")
+       var br8= document.createElement("br")
+
+       
+       
+       var label2 =document.createElement("lable")
+       label2.for="inputtwo"
+       label2.innerText="Expiry Month & Year"
+       var input2 = document.createElement("input")
+       input2.id="inputtwo"
+       input2.placeholder="MM"
+       var input3 = document.createElement("input")
+       input3.id="inputthree"
+       input3.placeholder="YY"
+
+
+       var label3 =document.createElement("lable")
+       label3.for="inputfour"
+       label3.innerText="CVV NO."
+       var input4 = document.createElement("input")
+       input4.id="inputfour"
+       input4.placeholder="Enter CVV"
+       input4.type="password"
+       var label4 =document.createElement("lable")
+       label4.for="inputfive"
+       label4.innerText="Name on Card"
+       var input5 = document.createElement("input")
+       input5.id="inputfive"
+       input5.placeholder="Card Holder Name"
+
+       var para2 = document.createElement("p")
+       para2.innerText = "Note: Your card details will be saved and available in 'My Account' section for removal." 
+       para2.id="para2"
+       var submit1 = document.createElement("input")
+       submit1.type="submit"
+       submit1.id="submit"
+       submit1.value="Place Order"
+
+       form1.append(label1,br1,input1,br2,label2,br3,input2,input3,br4,label3,br5,input4,br6,label4,br7,input5,br8,para2,submit1)
+       document.querySelector("#payment-details").append(form1)
+       document.querySelector("#payment-details-heading").append(heading,para) 
+      
+        
+    document.querySelector("#form1").addEventListener("submit",subFunc)
+    function subFunc(){
+        event.preventDefault()
+        alert("payment successful Congrats! ");
+
+         window.location.href="index.html"
+    }
+    // window.location.href = "https://www.google.com";
+}
+
+var cartItem=JSON.parse(localStorage.getItem("cart"))
+console.log(cartItem)
+cartItem.map(function(elem,index)
+ {
+    var box=document.createElement("div")
+        box.setAttribute("id","box")
+    var sbox=document.createElement("div")
+        sbox.setAttribute("id","sbox")
+    var box2=document.createElement("div")
+        box2.setAttribute("id","box2")   
+        
+    var image=document.createElement("img")
+        image.src=elem.image_url;
+        image.setAttribute("class","image")
+
+        var itemname=document.createElement("h5")
+        itemname.setAttribute("id","itemname")
+        itemname.innerText=elem.name
+
+        var itemprice=document.createElement("h4")
+        itemprice.innerText="Rs "+elem.offprice
+       
+        box2.append(itemprice)
+       var totalamount=localStorage.getItem("MRP")
+       var totalq=document.createElement("h4")
+         totalq.innerText=totalamount
+        sbox.append(itemname,box2)
+        box.append(image,sbox);
+        document.querySelector("#main").append(box)   
+
+ })
+ var totalamount=localStorage.getItem("Amount")
+       var totalq=document.createElement("h2")
+         totalq.innerText= "Grand total  "+": "+"Rs "+totalamount
+         document.querySelector("#totalamt").append(totalq)  
+         console.log(totalq)
+</script>

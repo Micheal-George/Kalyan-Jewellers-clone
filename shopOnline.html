@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+    <div class="box1">
+        <div class="topleft">
+            <div>
+                <div><i class="fa-brands fa-whatsapp"></i></div>
+                <div>Whatsapp us!</div> 
+            </div>
+            <div>
+                <div><i class="fa-solid fa-truck"></i></div>
+                <div>Order Tracking</div>
+            </div>
+
+        </div>
+        <div class="topright">
+            <div>Contact Us</div>
+            <div>Blog</div>
+            <div>
+                <select id="sel1">
+                    <option>INR</option>
+                    <option>AUD</option>
+                    <option>CAD</option>
+                    <option>EUR</option>
+
+                </select>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="box2">
+        <div><img id="candere" src="https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/candere_logo/Candere_logo.svg?v=15653406421114"/></div>
+        <div id="midinput">
+            <div><input id="text" type="text" placeholder="What are you looking for today? Eg:solitaire rings"/></div>
+            <div id="mic">
+              <div><i class="fa-solid fa-microphone"></i></div>  
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+        <div id="heart">
+            <div><i class="fa-regular fa-heart"></i></div>
+            <div><a href="cart.html"><img style="height: 25px;width: 25px;color: #071f3e;cursor: pointer;" src="https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/empty-cart/bag.svg?v=15653406421114" alt=""></a></div>
+            <div><a href="sign  in .html"><i class="fa-regular fa-user"></i></a></div>
+        </div>
+        
+        
+    </div>
+    <div id="box3">
+        <div class="trending">Trending</div>
+        <div class="trending">Rings</div>
+        <div class="trending">Earrings</div>
+        <div class="trending">Necklace</div>
+        <div class="trending">Chains</div>
+        <div class="trending">Bangles</div>
+        <div class="trending">Other Jewellery</div>
+        <div class="trending">Collections</div>
+        <div class="trending">Solitaires</div>
+        <div class="trending">Gifts</div>
+        <div class="trending">Wedding</div>
+        <div class="trending"><span style="color:red">Sale</span></div>
+
+    </div>
+
+</div>
+<p id="home">Home>Diamond</p>
+<div id="container1">
+    <div id="a1">
+        <div>CURRENTLY SHOPING BY:</div>
+        <div> Diamond</div>
+    </div>
+    <div id="a2">
+        <div><select class="selectTag" id="sortNames" onchange="handleNameSort()">
+            <option>SHIPS BY</option>
+            <option value="ascending">Below 5 days</option>
+            <option value="descending">5 to 10 days</option>
+            <option value="ascending">10 to 20 days</option>
+            <option value="descending">Above 20 days</option>
+        </select></div>
+        <div>
+            <select id="sortPrice" class="selectTag" onchange="handlePriceSort()">
+                <option value="">Price By</option>
+                <option value="htl">High to Low</option>
+                <option value="lth">Low to High</option>
+              </select>
+        </div>
+        <div>
+            <select class="selectTag" id="sortProduct" onchange="handleProductSort()" >
+                <option value="">PRODUCT TYPE</option>
+                <option value="ring">Rings</option>
+                <option value="necklace">Necklace</option>
+                <option value="earRing">Earrings</option>
+                <option value="braclet">Braclet</option>
+            </select>
+        </div>
+        <div>
+            <select class="selectTag">
+                <option>GENDER</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Kids</option>
+                <option>Unisex</option>
+            </select>
+        </div>
+        <div>
+            <select class="selectTag">
+                <option>METAL WEIGHT</option>
+                <option>0grams-2grams</option>
+                <option>0grams-4grams</option>
+                <option>4grams-6grams</option>
+                <option>6grams-8grams</option>
+                <option>8grams-10grams</option>
+            </select>
+        </div>
+        <div>
+            <select class="selectTag">
+                <option>DIAMOND WEIGHT</option>
+                <option>0.05ct-0.15ct</option>
+                <option>0.15ct-0.30ct</option>
+                <option>0.30ct-0.50ct</option>
+                <option>0.50ct-1.00ct</option>
+                <option>Above 1.00ct</option>
+            </select>
+        </div>
+        <div class="teal">MORE FILTER</div>
+    </div>
+</div>
+
+
+
+<div id="contain">
+
+</div>
+
+<div id="load">
+    <div><i style ="margin-right: 5px"class="fa-solid fa-angle-down"></i>Load more</div>  
+    
+</div>
+
+<div id="container3">
+    <div id="heading1">
+        <p>Buy Diamond Jewellery Online at Candere</p>
+    </div>
+    <p id="heading2">Women love their <span style="color:black,">jewellery</span>. They keep piling on new stuff, adorning them in every possible way. And they are the stronger gender when it comes to buying and owning precious stones, metals & other forms of jewellery. And<br>
+        yet, diamonds manage to maintain their special importance. Diamond jewellery is for everyone who loves his/her jewels, as diamonds are scientifically proven to be more than just beautiful pieces of jewellery.<br>                                        
+        
+        Diamonds are perceived to be one of the prized possessions. It is considered a love gift for couples. There are several myths about diamond jewellery.<br> Be it diamonds or diamond jewellery, while searching for online jewellery designs, you need to keep in mind certain things like the 4 Cs which includes carat, colour, cut and clarity.<br>
+        Apart from these, you should also lookout for the fifth C, which is the certificate of purity. Do not be deceived by tricky marketing gimmicks or get fooled by half-enlightened-half-ignorant salespersons. Ask for an invoice and a<br> certificate, the authenticity document. This document of certification has to come from an authorized certifying lab, not the jeweller. Well at Candere, you need not worry about buying diamonds online as we make sure to provide<br> all the authentic details and certificate along with the product.</p>
+    
+        <div id="heading1">
+            <p>Real Diamond Jewellery
+            </p>
+        </div>
+        <p id="heading2"><span>Diamond jewellery</span> has become increasingly popular in recent times. The scintillating shine of diamond jewellery has grabbed the attention of ladies as well as men. If you are looking for a special gift to give to your loved ones,<br> nothing is better than diamond jewellery. The sparkling and shining diamonds look ravishing on the body when worn by a woman. Be it for an auspicious occasion or purely for fashion, diamonds are becoming more and more<br> popular with people of all ages.<br>
+            Not all first-time buyers are thoroughly educated about diamonds or solitaires for that matter. However, this can’t be a reason to worry or discourage yourself from buying the diamond latest jewellery designs. In fact, for first-time<br> diamond buyers, it is even more fun, because they get to learn a lot and also explore more. Well, be rest assured, the diamond and jewellery consultants at Candere will guide you throughout. Nonetheless, it pays to do your<br> online research and even offline, before you even add a product to your shopping cart..</p>
+        
+            <div id="heading1">
+                <p>Diamond Jewellery Designs
+                </p>
+            </div>
+            <p id="heading2">Even though Candere has contemporized most of their designs and collections, these collections mostly are a blend of traditionally old and modern designs or concepts. Most of our online jewellery designs are original and self-<br>conceived too. You would typically find diamond versions of gold jewellery designs cause that’s what people prefer these days. Like there are diamond mangalsutras replacing the predictable golden ones that are suited to<br> match with office wardrobes; or small yet classy diamond studs replacing gold jhumkas or gold earrings; diamond-studded rings - that look chic and subtle yet speak volumes of class and style and so on.<br>
+                Even men prefer and love diamond jewellery these days to gold jewellery. Diamonds kind of make the designs look elegant and subtle too; not very complicated or loud. Also, cocktails rings have their revised versions in dainty<br> diamonds and glittering gemstones.</p>
+    
+
+            <div id="heading1">
+                    <p>Diamond Jewellery With Price
+                    </p>
+            </div>
+            <p id="heading2">At Candere, the diamond jewellery price starts from Rs. 3,400 (approx.) for a nose pin and goes up to Rs. 18 lakhs (approx.) for a gorgeous sparkling bangle. This wide range of pricing includes a variety of products to choose<br> from. All diamond jewellery is certified by reputed labs. You can avail of Double Gold Rate Protection once the cart value hits 10k. Also explore Diamond Engagement Rings, Solitaire Rings, Men’s Diamond Rings.</p>
+        
+            <div id="heading1">
+                <p>Why Candere for Diamond Jewellery Online Shopping?
+                </p>
+            </div>
+            <div id="heading1">
+                <p style="font-weight:400">Online buying of jewellery saves you a few bucks over retail experience and store-buying.<br>
+                    It saves the inconvenience and hassle of check-out counter queues, parking woes and travel time.<br>
+                    Better to navigate the web pages than to navigate traffic.<br>
+                    Gives you privacy and exclusivity over designs and purchasing them.<br>
+                    No influence or interference from other buyers or distraction.<br>
+                    Makes comparison easier for brands, designs, prices, etc.<br>
+                    Better buying deals and conceptualized designs.<br>
+                    You can avail interest-free instalments and buy the design your heart desires.<br>
+                    Product is described in details, including price break-up.<br>
+                    Competent shipping: confidential, secure and express.</p></div>
+
+            <div id="heading1">
+                        <p>Designer Diamond Jewellery Online Shopping
+                        </p>
+            </div>
+                <p id="heading2">People are turning to online buying only to save money, time and energy. All they want is to have a hassle-free shopping experience.<br>
+                    Buying diamonds, precious metals and gemstones online is a wise decision as you get to browse and compare products, brands, designs, pricing in a considerably shorter amount of time. Not only that, Candere offers<br> jewellery counselling to assist you to buy jewellery online. In case you are confused about something, need guidance to purchase, or unable to find the perfect choice of product on our site - our team will help you anytime.<br>
+                    Candere also offers the option to customize, engrave and personalize your precious jewellery, free of cost. That’s right; we assure you of the lowest making charges yet the best services and products at competent prices. Also<br> explore our Also explore White Gold Jewellery, Platinum Jewellery & Gemstone jewellery.</p>
+
+                    <div id="heading1">
+                        <p>Certified Diamond Jewellery Sets
+                        </p>
+            </div>
+                <p id="heading2">Diamond Jewellery is an investment and you don't want to take chances in losing your money. When you are purchasing a piece of diamond jewellery, you should look for the certificate. It not only proves the authenticity of the<br> jewellery but also validates the price that you are paying for it. There are specialised platforms like Candere, which sell certified designs. Our Jewellery Certification ensures that you are getting your money’s worth and you get<br> to buy jewellery at best prices in India. Also explore our Karwa Chauth Gifts, Gold Coin, Gift For Him, Gifts for her under 15000 & Gifts for Mother.</p>
+
+                <div id="heading1">
+                    <p>Here are some Diamond jewellery related FAQs for you!
+                    </p>
+        </div>
+            <p id="heading2">1. How can I place an order on your website?
+                In order to place an order at Candere, visit candere.com. Select the product which you want to buy, do the necessary customization (optional) and add it to the cart. Once done, log in to your Candere account or make a fresh one.<br>Fill in the necessary information and checkout with your desired payment option.</p>
+            
+                <p id="heading2">2. What would confirm the placing of a jewellery order?<br>
+                    Once you place an order at Candere, we will send you a confirmation of the same via email, SMS and Whatsapp.</p>
+                    <p id="heading2">3. How can I find my ring or bangle size?<br>
+                        Every ring and bangle on Candere comes with a size guide which can be found just below the available size of every product.</p>
+                        <p id="heading2">4. Are all your jewellery pieces real and certified?<br>
+                            Yes. All jewellery pieces available at Candere are real and certified. The gold is certified by BIS (Bureau of Indian Standards) and diamond and gemstones are certified by IGI (International Gemmological Institute), CGL<br> (Cambay Gemmological Lab) and SGL(Solitaire Gemmological Laboratories).</p>
+                            <p id="heading2">5. Do they come with insurance?<br>
+                                Yes, jewellery insurance is applied to every product(s) in the cart when the cart value crosses Rs. 10,000.</p>
+                                <p id="heading2">6. What if I do not like the product after purchasing it?<br>
+                                    If you do not like the product after purchasing it, you may get it exchanged or returned. We have a 100% refund policy on products within 24 hours of purchasing it. Beyond that, 10% cancellation fee is applicable. For exchange,<br> you are eligible for 100% exchange within 30 days of purchase.</p>
+                                    <p id="heading2">7. Do you have additional offers or discounts for regular buyers?<br>
+                                        No, there are no additional offers or discounts for regular buyers</p>
+                                        <p id="heading2">8. Are the images on the website of real products?<br>
+                                            Most products on the website are images generated from software that converts the manual designs to Computer Aided Designing, these are zoomed in image references of the real product. We also have real product photographs in our wedding collection</p>
+                                            <p id="heading2">9. Do you have a referral program?<br>
+                                                Yes, we do have a referral program.</p>
+
+</div>
+<div id="last1">
+    <div class="last11"><h4>Sign up for our offer updates:</h4></div>
+    <div><input class="last12" type="email" placeholder="Your email address"></div>
+    <div> <input class="last13" type="mobile" placeholder="Your mobile number"></div>
+    <div><button class="last14">SUBSCRIBE NOW</button></div>
+    <div class="last15">
+        <div class="up">Follow Us On:</div>
+        <div class="down">
+            <div class="logo_1"><i class="fa-brands fa-facebook"></i></div>
+            <div class="logo_1"><i class="fa-brands fa-twitter"></i></div>
+            <div class="logo_1"><i class="fa-brands fa-youtube"></i></div>
+            <div class="logo_1"><i class="fa-brands fa-instagram-square"></i></div>
+            <div class="logo_1"><i class="fa-brands fa-blogger-b"></i></div>
+            <div class="logo_1"><i class="fa-brands fa-wikipedia-w"></i></div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div id="last2">
+    <!-- FOOTER SECTION STARTS -->
+        <div class="f1">
+             <h3><u>ABOUT US</u></h3>
+             <p>About Our Company</p>
+             <p>Media & Press</p>
+             <p>Terms & Conditions</p>
+             <p>Privacy Policy</p>
+             <p>FAQ</p>
+             <p>Other T&Cs</p>
+        </div>
+        <div class="f1">
+            <h3><u>WHY CANDERE?</u></h3>
+            <p>15-Day Returns</p>
+            <p>Cancel & Refund</p>
+            <p>Lifetime Exchange</p>
+            <p>DGRP</p>
+            <p>Certified Jewellery</p>
+            <p>Candere Wallet</p>
+            <p>Jewellery Insurance</p>
+        </div>
+
+        <div class="f1">
+            <h3><u>EXPERIENCE CANDERE</u></h3>
+            <p>Lookbook</p>
+            <p>Video Gallery</p>
+            <p>Customer Review</p>
+            <p>Candere Blog</p>
+            <p>Order Tracking</p>
+            <p>Virtual Try On</p>
+            <p>Jewellery Insurance</p>
+        </div>
+
+        <div class="f1">
+            <h3><u>JEWELLERY GUIDES</u></h3>
+            <p>Diamond Education</p>
+            <p>Gemstone Education</p>
+            <p>Metal Education</p>
+            <p>Size Guide</p>
+            <p>Gold Rate Guide</p>
+            <p>jewellery Care</p>
+        </div>
+
+        <div class="f1">
+            <h3><u>CONTACT US</u></h3>
+            <p>India 022 61066262</p>
+            <p>(9am-9pm, 7 days a week)</p>
+            <p>support@candere.com</p>
+            <p>StoreLocator</p>
+            <p>Kalyan Jeweller Website</p>
+            <p>Kalyan Stores</p>
+        </div>
+ <!-- end of footer section -->
+</div>
+
+<div id="last3">
+    <div id="last31">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWMAAACOCAMAAADTsZk7AAABOFBMVEX///8mJiYqiJAngYny8vLm5uakvQGVsAHi4ecAAAC6ub7u7u75+fkoKCgkJCT8/Pwgb3YAW2IgaW/Z3d/l6upRh4wRERHExMTR0dFHR0ednZ0+Pj57e3seHh4KCgoZGRmMjIxnZ2epvwAjhphemE3NzM/Av8MffpDAv8SDg4N4ojdOlnFzc3ODrjqnp6cle4KWlpZbW1szMzNRUVE6Ojq1yFqsvlmpwsTQ2N6ysrJqamqRtLqPrAC0srnC1NQldX+HqKpqmJ2ou72IrrFGeH5Fh41Sgolrk5Z/oaRGlZ2ItLzM09umvsRAjZRkoqnw6e99r7U/kH51p0icu0mVtyqpvkLO2pjC0YHe5rTj7MGswivw9dqlu0X4+elDknXD02m9z1a9zHNSklsZgp0ug4Nnm0eCpx9ZlVOipZEgAAAT6UlEQVR4nO2diX/TxrbHnUQisbUlHpDkJLKSUhm7mNiJ05vVWYBeEiBsLTygj9u+Xnr7//8Hb3bNSCPvJL0wv08XW9LMWF8dnTlzZiKVSlpaWlpaWlpaWlpaWlpaRfI827vp3/C1yoNwbQPKMk3Tsgzb9jTrmQnBxXSJEGMqy0Cob/r3/VcrAzfPWKOeWNwtKJVnzFBr1qNIabijMk5Ra9JqeUPhjsg4Ra1BixoZ8OiMMWdNmcsbnfBYjE3TuOlT+7toVCO2kRBjyxoZtHXTJ/f30CiI4YDDM26fnDw8O79z5+Ls4QmAEdtIpLUlIw2hC80X0t17dH7n8fLycnW5SvT4ycURIj0UtIZchBi7hdu3wcne0flPp9WVlZXqMlGVaQVt7Ny5eLh3AjDsAtq648v3dzC49bDlXjz5qYOZLnO8y8udjoAZo4ZbH//zCUKNRnx50NqQc9749snRBXQLKVmmTmdhYR5qASpHGmv58ZOzvX3zdgbyTZ/iTUs2Yxs8+kn0C5QthUu1wNVBqCXWyH8sn+/JjO2bPskblsTYOzqtcqdLLVekm2UsopYM+kI7C0GSqzirCqabY1vImOmUG/XKHZHxtx4jC4ztI4z4tJjuEMbEqJcJ5NuaMVPK2N7HJjyM8DDGjPKZZswkMO5UR0I8lPHCAoJ8uq8ZU3HG9snKMMSQ3vzV5eXlFermBkJG3uKhZkyVMn6EBhgDCV8+3Xu2D8D+/rOTo8uBlDvII1uaMVHqK86hGQ9AfPX02cuXS0zw49HlEG+h7ZiKM759Z4AZL8w/3RcIE8zg+VWhLSNDBiMy9qaZmkKzY5OXvJ7RkcS4yBsvvNhfUgk8nZKxZ26tb/dqtd52uxumZ2wmYV4g99PBKi182Dpgg0k7WO1ubKxuSQN4sAW3dbcCegw46K4fbvdw0c3WFsiQNhSNh+EUma2RGD99qUQMbfl5ca83nLEdHJbLfuRCRXG9HB0eUDLdskI1ebhoHvTSwn653KtgVGCnXIcqt8Rj22TbDuBf/RiXJEV3VyWCgar1eu4Sz5bxXgFhBPnkamLG5noczznOHJbjOG5c7pI9q2UnJ3dHrMbb6tVjRyg8F+/iCwRqLjq6viG21PJxDTXKad1nBUnZqL6zIdh94Mwpmg++KOO9IivG2ldDHs4Y1Py59FSx4i3OeC4rNxKqMWt+lN2/Sey4hnY4ZZlxHdUXCYwZYPwvurw7KcMg1zYqXPmSjI8E//vs6NWLy8vzo73UP788mYyxARFTQ2L/cZ1gNMbhbizaIa7A3yiNy9hxUnt2y+Egxk7U+HKMF15wmEtHL2CAgUYinc4VjDMG+uShjLuUo+sTh+e7c27NHMA49RWYIz4CGqAPFUeOUwZ8n6NgDA93ZcbOXB262dglFcErwNyFkvGX9BVX3FHsXdHdJHBYSO371QSMwx16D+5uHIRhcLC63ot4R8UYiw4x2mZ9nh3F9BJEfu1wvdVaP+y55Z7AfzQ7drsHB932rk8Yu37LlhkjK+fN73zBPo/1dy+PUtOmesVd8gSMt1xinbWEbbGCNvtMGTsHSaoA0L7fazF36m/TQMQzg24wLmN3Dl800PbZjWJKjKNuKDSfTBFKD2H8AlCOz+dzjDsvqI2/fJUfiwxhbLdwn+XEB+JGFkERxq6jtJ2AEnb9ruK8x7Fji/4U6jrK9DJRxvEU3kHWEMbPKcW9+TzjhQ635Hwubghj45D0WrvKyT5mx6Fin9Fm/d2Wquj4jEteLcLf69RVMcZTRBKyBjO+ovEDmFcxXlhgnuRRzpCHMLY2Sey1puwPB9kxiLCXcfyWcuQ1AeNSt04ik03y9XoZL7x6SZ1BwZzpJesPx7Vjythxkvy+lLHKjjeIjUe76lnCSRgHZQKVdpuM8RTRmqzBjE8I42fy1lSnz18WDESG+Qp6x8dtFapBjHfIDVBeVZ/PJIzDOukbtsnX62U8T830qIgx7/ZejN3nUa8aHSogD2AMyH3txgWx1CSMkzK+pfxD8vV6GV8SguBFEeOFe9Rh5yKLEWM3GIDF7SCLmTPmyW1+xBbhE/UKFhRM4Y/LtBMljGHIk+bWp1tONojxArXS/ctCxh2azDgal7G5Sxk7rh/3urLFsrhie5OpzerYIOOPeL0gXp2AsUGKuD7dTe3Y7fHWN1VOa3QNZExzmvvzxYyJQ375fFzG0ngZDtzaoWKfGzH5NMbz2sQdxxsFpjUB4y75GrOBJBvnCa2LUfz4Gsj4SNXlybEwPWR8xqUWTxWgBINf7gXcNDl/fhloNqJkbBIfExV0eeMztrtsnMdABpm2If6i1kbTKHY8nPEEdlyyV/04PQ/HiV1+/+dzQiwrZm1TxsoBSGk8xshuTXipcfv1Nms9nxO6BsaDfAW1473xGUMevYgOKIgh+SyQUzCmeMzZMXahHduruzQPHe/wo3OMnZtlPIUd49Np1WLqMpD8VeJlGWOcuMQqU388WzsO18ou9lWuf5j+SMZYaP1G/XGHZjgnsmPUPGhslsuMcURzxCyuaK8ztVgMMKI/lueaqOFm7dgAO/T6RqvCb2RxxWaLNz9FYrM0CWOZ5XR2jGVu0LEbND8yoVc8Bhk1rqhLc6YYqsOz8OQr6vNIQ3yERxQQ73UdY5C7r9/8/CPRA0k/iPr5H1g/v7k/MWMI5pCQc6Jd/H3AOI/Ex07cLoiPzR5m7K+LG0mKOOqJjLE/NnZIf1AWeV5jTujuL9/dovpO1K3FvI7hP68nZ1yyenRoXcdfBzBG4zwH+daiyW7MeM5vixtJIjXalhjj2G21TnxFL+8rroHx3fsccUYKxkjf35uccSmoU2eBjx2Ur6CTIPWCoRdN6EXbgi+xt8m2TfpDBMYGzbHGq+nxXytjEFPG2NQG592cvMNNZRCHzadfkcw17BEiFhqKY5CA9qHC8Zoxzh87RRNRfBJLTEwzjmxSVBrntclMk+DAv1bGQZ26AHzLDmJskmHLXLytrnaL3fzppi65gDymlhjj+tBqgez6ir8J4+NZMfZIyt6JyGhrEGM+nxevK9ObAQl5hZsfuQpHXCIh54RaJF8RbbLq/laMj99OzvhgQ1guabVo7JaJjwfOS0NLFpYC2nz1xRq1cx5ZbJLr566xQ2TGgBbI5oSuIT4ezvj4Xel/jidkbLTL5Vo3CAEAYbI155P0m+sQ42PjvO6WoFWGaINlM6Ly9kGIWgmTg80yz7jT3f52APeBRg/ZqcOvX45xmva3JMbRutj61hQp5CkYv4P3uAB5LMZmzZ2LfN/Zra3txHWWsWBLdVi+wq8L4g7TXqPZSGhr9bm1Xq+2E9VjPsFnRfSmiP3dXm+XJvecKF0vl2Fs14ihsxp4vkJqnV+ha2R8/B6XfzcZ44QlbaEYsHQgplrv5qSJGXObJUUdUgOqwuVrtQ5iVqUbpbULq2Vy89I+PopNhKjXbRYN3r8g41/e0wreT8RYQdGJ3LB4bzrdhiH7uf3uGvPedrr2NS3NV7MpGNuHbJLczjFmNUWtyRdjTcqYIS59mICxV9rOYXDLazykHca4ZLXLOcoO76Ps7XIkVuA40HMLiLKMWQA9R9bmqu34Ohh/fJsyPv7lV1b+/WS+Yn3Hh3c0Xxnpxn5tNT2J1bKbV1lafxa25/woXVbpQue+ld7NB7165LJ9c1G9JyWA1/H1ERc0b9Qx5RjPdgdRlGs8iq/DH3/4xCAvHv9vinjCPs8ODzZ3YFeCU+D1erR5IC5823LW8nLkpXFe0q35ZVpBOa5tBGIz5lYvLtMEe7wt/wVOqVWGTfrxThpfW2sR2hTV0XUMFI2v7U6Rph+R8ccPpdKnj+Tz8VuO+N2ksRuUYYGD1Y1Wq9XdCjOPX7AtlfI1mAGqAP3FkplbAmGYDbxztZF7toMBQzr0cB5hk2XBTcCyjMLWv8TaWIkxofrpR2zGP35ihcXweLqx9FetkRj/Tg3302/wSwFizbhQxYz/lTL+jWP9/dbv7Kb89H8SYs24UMWMXwu+gtvup3f8048y4sU/NOMCFTOeF6OK1EFQffpHBvHifc24QMXzef/+RQosfpWK/fo2i3iq+byvWwMYv5ECZAlyHvHifxY04wINmJfODvRSyL++zRJeXHxzTzMu0KA1LIuZjMUHWuZDnjB0x9qOizSI8Q8Zxh9JIujDYs5RQFfxWTMuEmds5Rnfv5UVgvw+DzgXHWvGoqTnCZ3KjOcf5CF7asTHGTPuVKvLQ5/ZJL0oZ6q35njKj4MbHKWy2Uh+LpaMWJFC/vibeur/z4wZLw9/LpYJwjBcIq8FMNBngJ5X45kASMd7sIKlpSVzCT1/1gbAZKUBS/VYpLBHP5F6St6SeCzwbECemIMbtJdSwYImP9TDv4o9shluJ6kgA4ApHuOcMgYruYc2/fuBKk+vQJz1xtCMq+nz3VRz9EajgtTvo7kPUCFqGCU7qfSl6UkvqDDZJaNfqeAr4CWVCsFiNMnOPoD19OmR6O/XE1wCnSJsKuTHoUZKZp9XWmnYqLIEI7TIr6o0Sd18uwk/TJ54S58b651Xcx758+JojO/nzLj6GAxibGNyjQYmhc8YfQ48BeOEMsSMK/RkOWOToeobAmNUhdXH3PEVbFgp437FEBn3GzZnaaZbTcqYtGLNiLEBlvNPePtjJMbZDg8iXjniiFXPP0ZnE6Knq4cGtrOGiTO4JTXjBsDyMGN81l5I/m8hHglsA+D7oQ8t0ArRNthmAr+hpiHc0MOMgWXCjZUE+RwAGqRi02N2bKPaQ3MpPICWbBDGffyXQNMxFh+4uZd/pundv/LeIof4BwXiCyNlrGg17JOzQELg+GoVJWM+0YcZVwTGTbEsslhEFRDPYZF90J6h5SLG2DgDyg9XHKZNePiikMrQ/RASxuTXTMlYMGR7L/9U08yIWsX4wecc4uqTlLDSHScCY2tMxmg/ZYyKCosHIRt456Oj8DEJ9j60vEH8EnYTxKU3WFnK2IYXrMk3oIqImzKmZiy9V0EBef7PLOSsFX+WzLiDrVhArOyQkaUkFDI6+8aSNxJj7EebFmOMLNaSakU9mkHsGF8BC10WS2CMzNpUMrYqvGlAChHGoTc1YxGyfYKf4i27i6xPHhi1dfCzj40hZkwNsrnE+i90KnhKTu2Pm1CAFGsk+HxJn8djB44GMebk0aEh9QiQMfYVFB8JWCRfYbKujnQXpPoQX5qpGdsS5E7u8bF370tZTonx8R/5oK16ZA1DXCotoUABduropOwG6e/RadjcSwqM8e6EMG7C+ApaqZox7uVM6HnJWgsaPlgCY4NGb8SOc4ytLGMTXqOGNzVj6bn/NriTf0bv5+9vfadk/Oazwor3RkCMnmpJYlFknrZJAivYhxfHbmgr9BUN7GfskEFoCq4I2mhgoePpkwRIWRLiIl8RhAmNpFWMgcQYHYUYQy/dD42pGcuQbysg3/38/SLHzG34zetMQHGK3jF0MhLiEn6aFUJAGOGICwJX+2P8wyhjr4QcaaGvQMOIBtuG7JFyo4Oe1Ocq7TjrK+AGdDPAOG9axvIbLFSQIeU/HtwS/q7p+D9/vb6nQLwsIR7yu5Bj6LPLgEPm4X1eE8OokB4sFMqXaFxhsk6NNkCXaDHGTf4Msyxji5t42uf1TdbzTc0489ami6riedN3737+119v8N/n/fnX/c9ZwCQsfgzGQEx6J744u0EZ5/1xhrGHbZ6OEPtAqi7A3WGDVZoWRowBuRtoxVnGaJQS8A1NPIpBjMkAewaM5Z7vTAUZc4a6dy/Pl4bFdyTEw7MoIRmRYVmj2TH0FXRcbBJO3GhZnyfG2xLjvilVnGWMDZb8jUiFbeChyEwYy29jeTTgHQsKvtSK7wBzRMRmaNm2gX58s2QkpmHbFsGF7DgRXTnxx3g5FB5LI8YkMWGyDwC9fg65AIBdsSd46UGMg0x8jEPnBhxaW+zKUcZocDIbxhJkTzUaGYQYv0Fo1N6uVGr0+zjNg87F7NMv/QTnhFA2DipJGZMNsPOidoxHxMR+Q1QO/2syxngMkigYV3KMZTvGBkt/CiiljDH82TCW3YUieTEAMrLiM3NkxCWe94LmF/ZZBIzjY/aNdf9Bn1wMypjEahZj7AGyF1Ol4zxcI9kLa6NLalm+ImWcHefhykhd1NcQf4w/VILZMJZjuJMiyHnCKCxeORvdilGo1oCDtwDn2W2QNJuNZmKS06TPf09Y1pxvCGH0HDTp3zKBJlsLa4AAjgKDBH41G0GIUNhJkpDwAR5Gr5WR4EOEkw2DhEbKoMmiDSNEQ8qQHggatBEjaU7zQHpJImTv5Cf1G0OUiKsPxwoocGPi56nOYLrS2cpmWJda0pBPDVlpxSfmuIi/YYkvIruthJxBLIw8yLvG9Ju7h0qCfK6AnEO88k9xcKcRjyAxvLDOV3JLAnIBxakYFmvEI0mEXLrIhRcZxFVp5PGtv1dzZEkx3FF2KjVjxRca8USSIO9lXqwnIz7XAcWkEt3FSUeCLIXFZ2OHxVpcYniBJ6AWMozxa0sfCoSn+RO2b1QiZLAsxHCUcTWLWAcU40sKlIW5kXTkIc7cfesLYCeUDHmFvXqaxWzSzJ0OKCaUNM13jt/w3YGO+BS/QPqxmKLQiCeWBJm+qZ68bb4qzdzp3m4aiZAfVasM8soTjXh2kpzyBYwvEGKdBJqtpGk+sHd0dvbwxNSIZytpms+2DRGwjtlmJKnnMyTCOqCYlbxCxhrxzOQVMNYBxSxlqxjr3m62snOMdUAxc9kZxhrxF5AnMda93ZeRzRlP+dY+rUHyPDgM0YC1tLS0tLS0tLS0tLS0vm79Pxk8EKhTiomvAAAAAElFTkSuQmCC"/>
+    </div>
+    <div id="last32">
+        <h3>@ 2022 CANDERE.COM.ALL RIGHT ARE RESERVED  </h3>
+    </div>
+    <div id="last33">
+      
+            <p class="we">WE ACCEPT</p>
+        
+        <div class="A">
+            <img src="https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/2016-02-09_142525.png?v=1495845651"/></div> 
+    </div>
+    <!-- <div id="last34">
+        <img src="https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/2016-02-09_142525.png?v=1495845651"/>
+    </div> -->
+
+</div>
+<div id="last4">
+    <p class="B">
+      Solitare Rings&nbsp; |&nbsp; Engagement Ring&nbsp; |&nbsp; Cocktail Ring &nbsp;|&nbsp; Women's Ring &nbsp;|&nbsp; Men's Ring &nbsp;|&nbsp; Wedding Ring&nbsp; | &nbsp;Solitares Earings&nbsp; | &nbsp;Just Balis&nbsp; |&nbsp; Jhumakas&nbsp; | &nbsp;Cosktail Drops &nbsp;| &nbsp;Studs&nbsp; | &nbsp;Dangles&nbsp; |&nbsp; Just Initials&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;Classic &nbsp;|&nbsp; Gods Love &nbsp;|&nbsp; Heart Beats&nbsp; |&nbsp; Men's pedants&nbsp; |&nbsp; Cocktail clusters &nbsp;| &nbsp;Everyday &nbsp;|&nbsp;Ocassional &nbsp;|&nbsp; Mangalsutra chain &nbsp;|&nbsp; De-light Collection&nbsp; | &nbsp;oval Kada &nbsp;|&nbsp; Eternity&nbsp; | &nbsp;Braclets
+    </p>
+    <div class="C">
+        <img src="https://cdn.yellowmessenger.com/1Hmvxn1lKlLP1590398279923.png"/>
+    </div>
+</div>
+</body>
+</html>
+<script src="data.js"></script>
